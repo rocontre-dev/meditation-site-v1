@@ -1,0 +1,84 @@
+{
+  "header": {
+    "logo": "Inner Space",
+    "courses": "Courses",
+    "community": "Community",
+    "retreats": "Retreats",
+    "reprogramming": "Reprogramming",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Find your inner",
+    "titleHighlight": "space",
+    "subtitle": "A conscious companionship for your inner transformation through meditation courses, silent retreats, and personal growth processes.",
+    "btnCourses": "Explore courses",
+    "btnRetreats": "View retreats",
+    "feature1": "Unlimited access",
+    "feature2": "Personalized guidance",
+    "feature3": "Active community"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Companionship for your inner journey",
+    "courseTitle": "Meditation Courses",
+    "courseDesc": "Structured programs to learn meditation and deepen your practice.",
+    "retreatTitle": "Silent Retreats",
+    "retreatDesc": "Immersive experiences in nature to disconnect and reconnect.",
+    "coachingTitle": "Personal Coaching",
+    "coachingDesc": "Individual sessions to work on your inner growth processes."
+  },
+  "onlineCourse": {
+    "title": "Online Meditation Course",
+    "subtitle": "Learn to meditate from home, at your own pace",
+    "module1": "Module 1: Foundations",
+    "module1Desc": "Introduction to meditation and its benefits.",
+    "module2": "Module 2: Practice",
+    "module2Desc": "Techniques and exercises to develop your practice.",
+    "module3": "Module 3: Deepening",
+    "module3Desc": "Bringing meditation into your daily life.",
+    "enroll": "Enroll now"
+  },
+  "community": {
+    "title": "Our Community",
+    "subtitle": "Join a group of people on the same path",
+    "desc1": "Monthly online meetings to practice together.",
+    "desc2": "Private group for support and sharing experiences.",
+    "desc3": "Exclusive resources and additional content.",
+    "join": "Join the community"
+  },
+  "retreats": {
+    "title": "In-Person Retreats",
+    "subtitle": "Transformative experiences in natural settings",
+    "retreat1Title": "Silence Retreat - 5 days",
+    "retreat1Desc": "Complete immersion in the practice of silence and meditation.",
+    "retreat2Title": "Reconnection Weekend",
+    "retreat2Desc": "An escape from routine to reconnect with yourself.",
+    "retreat3Title": "Advanced Meditation Retreat",
+    "retreat3Desc": "For experienced practitioners seeking to deepen.",
+    "learnMore": "Learn more"
+  },
+  "reprogramming": {
+    "title": "Mental Reprogramming",
+    "subtitle": "Transform your limiting patterns",
+    "desc": "A guided process to identify and transform beliefs and patterns that no longer serve you, creating new neural pathways toward well-being.",
+    "benefit1": "Identify limiting patterns",
+    "benefit2": "Create empowering new beliefs",
+    "benefit3": "Integration into daily life",
+    "start": "Start process"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions? We're here to help",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send message",
+    "success": "Message sent successfully",
+    "error": "Error sending message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  }
+}

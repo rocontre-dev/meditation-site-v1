@@ -1,0 +1,84 @@
+{
+  "header": {
+    "logo": "Espacio Interior",
+    "courses": "Cursos",
+    "community": "Comunidad",
+    "retreats": "Retiros",
+    "reprogramming": "Reprogramación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Encuentra tu espacio",
+    "titleHighlight": "interior",
+    "subtitle": "Un acompañamiento consciente para tu transformación interior a través de cursos de meditación, retiros en silencio y procesos personales de crecimiento.",
+    "btnCourses": "Conoce los cursos",
+    "btnRetreats": "Ver retiros",
+    "feature1": "Acceso ilimitado",
+    "feature2": "Acompañamiento personalizado",
+    "feature3": "Comunidad activa"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Acompañamiento para tu camino interior",
+    "courseTitle": "Cursos de Meditación",
+    "courseDesc": "Programas estructurados para aprender a meditar y profundizar en tu práctica.",
+    "retreatTitle": "Retiros en Silencio",
+    "retreatDesc": "Experiencias inmersivas en la naturaleza para desconectar y reconectar.",
+    "coachingTitle": "Acompañamiento Personal",
+    "coachingDesc": "Sesiones individuales para trabajar tus procesos de crecimiento interior."
+  },
+  "onlineCourse": {
+    "title": "Curso Online de Meditación",
+    "subtitle": "Aprende a meditar desde casa, a tu propio ritmo",
+    "module1": "Módulo 1: Fundamentos",
+    "module1Desc": "Introducción a la meditación y sus beneficios.",
+    "module2": "Módulo 2: Práctica",
+    "module2Desc": "Técnicas y ejercicios para desarrollar tu práctica.",
+    "module3": "Módulo 3: Profundización",
+    "module3Desc": "Llevar la meditación a tu vida diaria.",
+    "enroll": "Inscribirse ahora"
+  },
+  "community": {
+    "title": "Nuestra Comunidad",
+    "subtitle": "Únete a un grupo de personas en el mismo camino",
+    "desc1": "Encuentros mensuales en línea para practicar juntos.",
+    "desc2": "Grupo privado de apoyo y compartir experiencias.",
+    "desc3": "Recursos exclusivos y contenido adicional.",
+    "join": "Unirme a la comunidad"
+  },
+  "retreats": {
+    "title": "Retiros Presenciales",
+    "subtitle": "Experiencias transformadoras en entornos naturales",
+    "retreat1Title": "Retiro de Silencio - 5 días",
+    "retreat1Desc": "Inmersión completa en la práctica del silencio y la meditación.",
+    "retreat2Title": "Fin de Semana de Reconexión",
+    "retreat2Desc": "Un escape de la rutina para reconectar contigo mismo.",
+    "retreat3Title": "Retiro de Meditación Avanzada",
+    "retreat3Desc": "Para practicantes con experiencia que buscan profundizar.",
+    "learnMore": "Más información"
+  },
+  "reprogramming": {
+    "title": "Reprogramación Mental",
+    "subtitle": "Transforma tus patrones limitantes",
+    "desc": "Un proceso guiado para identificar y transformar creencias y patrones que ya no te sirven, creando nuevos caminos neuronales hacia el bienestar.",
+    "benefit1": "Identifica patrones limitantes",
+    "benefit2": "Crea nuevas creencias potenciadoras",
+    "benefit3": "Integración en la vida diaria",
+    "start": "Comenzar proceso"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte",
+    "name": "Tu nombre",
+    "email": "Tu email",
+    "message": "Tu mensaje",
+    "send": "Enviar mensaje",
+    "success": "Mensaje enviado con éxito",
+    "error": "Error al enviar el mensaje"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones"
+  }
+}

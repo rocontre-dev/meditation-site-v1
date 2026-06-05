@@ -1,0 +1,11 @@
+/* App-specific styles - most styling is handled by Tailwind CSS */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure main content doesn't get hidden behind fixed header */
+main {
+  min-height: 100vh;
+}
