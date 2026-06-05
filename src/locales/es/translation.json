@@ -1,21 +1,36 @@
 {
   "header": {
     "logo": "Espacio Interior",
-    "courses": "Cursos",
-    "community": "Comunidad",
-    "retreats": "Retiros",
-    "reprogramming": "Reprogramación",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "resources": "Recursos",
+    "bookings": "Reservas",
     "contact": "Contacto"
   },
   "hero": {
     "title": "Encuentra tu espacio",
     "titleHighlight": "interior",
-    "subtitle": "Un acompañamiento consciente para tu transformación interior a través de cursos de meditación, retiros en silencio y procesos personales de crecimiento.",
-    "btnCourses": "Conoce los cursos",
-    "btnRetreats": "Ver retiros",
-    "feature1": "Acceso ilimitado",
-    "feature2": "Acompañamiento personalizado",
-    "feature3": "Comunidad activa"
+    "subtitle": "Un acompañamiento consciente para tu transformación interior a través de la meditación, la reflexión, los retiros en silencio y procesos personales de crecimiento.",
+    "btnSession": "Reservar una sesión",
+    "btnResources": "Explorar recursos",
+    "feature1": "Meditación",
+    "feature2": "Reflexión",
+    "feature3": "Transformación"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Un camino de presencia, escucha y transformación interior.",
+    "paragraph1": "Mi interés por el autoconocimiento, la conciencia y los procesos de transformación interior nace de la experiencia directa de observar la vida, sus cambios y los desafíos que todos atravesamos.",
+    "paragraph2": "Acompaño a personas que desean comprenderse con mayor profundidad, desarrollar una relación más consciente consigo mismas y encontrar recursos para habitar sus emociones, sus procesos y su propia historia desde una mirada más amplia y compasiva.",
+    "paragraph3": "Creo en la importancia de la presencia, la escucha y el encuentro genuino como herramientas para el bienestar y el crecimiento personal.",
+    "presenceTitle": "Presencia",
+    "presenceDesc": "Cultivar la capacidad de estar aquí y ahora con apertura y atención.",
+    "listenTitle": "Escucha",
+    "listenDesc": "Crear espacios seguros donde cada experiencia pueda ser observada y comprendida.",
+    "transformationTitle": "Transformación",
+    "transformationDesc": "Reconocer patrones, desarrollar conciencia y abrir nuevas posibilidades de crecimiento.",
+    "ctaButton": "Agendar una conversación"
   },
   "services": {
     "title": "Nuestros Servicios",
@@ -65,6 +80,38 @@
     "benefit2": "Crea nuevas creencias potenciadoras",
     "benefit3": "Integración en la vida diaria",
     "start": "Comenzar proceso"
+  },
+  "resources": {
+    "title": "Recursos",
+    "subtitle": "Un espacio para compartir reflexiones, meditaciones y herramientas que acompañen tu proceso de autoconocimiento, presencia y transformación.",
+    "featuredLabel": "Reflexión destacada",
+    "featuredTitle": "La brevedad de la vida",
+    "featuredText1": "La vida parece larga cuando la pensamos, pero breve cuando la observamos con atención.",
+    "featuredText2": "Muchas veces vivimos como si siempre hubiera más tiempo: más tiempo para agradecer, para escuchar, para decir lo que sentimos o para habitar plenamente el momento presente.",
+    "featuredText3": "Recordar que nuestra experiencia es limitada no tiene por qué generar miedo. Puede convertirse en una invitación a vivir con mayor conciencia, presencia y profundidad.",
+    "featuredText4": "Tal vez la pregunta no sea cuánto tiempo tenemos, sino cómo elegimos habitar el tiempo que nos ha sido dado.",
+    "featuredButton": "Ver más reflexiones",
+    "reflexionesTitle": "Reflexiones",
+    "reflexionesDesc": "Pensamientos y escritos sobre la vida, la presencia, el cambio, el silencio y los procesos de transformación interior.",
+    "meditacionesTitle": "Meditaciones Guiadas",
+    "meditacionesDesc": "Prácticas para acompañarte en momentos de ansiedad, regulación emocional, descanso y conexión contigo mismo.",
+    "podcastTitle": "Podcast",
+    "podcastDesc": "Reflexiones en formato de audio sobre la brevedad de la vida, la muerte, la presencia, el silencio y el despertar de la conciencia.",
+    "comingSoon": "Próximamente"
+  },
+  "bookings": {
+    "title": "Reservas",
+    "subtitle": "Agenda una sesión, consulta o actividad y da el siguiente paso en tu proceso de acompañamiento interior.",
+    "description": "Elige el espacio que mejor se adapte a tu momento actual. Puedes reservar una consulta individual, una sesión de acompañamiento o solicitar información sobre próximas actividades.",
+    "consultaTitle": "Consulta individual",
+    "consultaDesc": "Un espacio personalizado para explorar tu proceso, resolver dudas y recibir acompañamiento cercano.",
+    "consultaButton": "Reservar consulta",
+    "sesionTitle": "Sesión de acompañamiento",
+    "sesionDesc": "Un encuentro para profundizar en tu camino de autoconocimiento, presencia y transformación.",
+    "sesionButton": "Reservar sesión",
+    "actividadesTitle": "Actividades y talleres",
+    "actividadesDesc": "Consulta próximas fechas para talleres, encuentros, meditaciones o actividades grupales.",
+    "actividadesButton": "Ver disponibilidad"
   },
   "contact": {
     "title": "Contacto",

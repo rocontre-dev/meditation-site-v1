@@ -25,14 +25,14 @@ const Retreats = () => {
   ];
 
   return (
-    <section id="retiros" className="py-20 md:py-28 bg-stone-50">
+    <section id="retiros" className="py-20 md:py-28 bg-[#F0EDE5]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-stone-800 mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-[#3E4B3F] mb-4 tracking-tight">
             {t('retreats.title')}
           </h2>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#5A6B5C] max-w-2xl mx-auto leading-relaxed">
             {t('retreats.subtitle')}
           </p>
         </div>
@@ -43,24 +43,24 @@ const Retreats = () => {
             <Card key={retreat.id} className="flex flex-col">
               {/* Date badge */}
               <div className="flex items-center justify-between mb-4">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-amber-100 text-amber-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#CDD7C9] text-[#5F6B5C]">
                   {retreat.date}
                 </span>
-                <span className="text-stone-500 text-sm">
+                <span className="text-[#7D8C7A] text-sm">
                   {retreat.duration}
                 </span>
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-medium text-stone-800 mb-3">
+              <h3 className="text-xl font-medium text-[#3E4B3F] mb-3">
                 {retreat.title}
               </h3>
-              <p className="text-stone-600 leading-relaxed mb-4 flex-grow">
+              <p className="text-[#5A6B5C] leading-relaxed mb-4 flex-grow">
                 {retreat.description}
               </p>
 
               {/* Spots info */}
-              <div className="flex items-center gap-2 text-stone-500 text-sm mb-6">
+              <div className="flex items-center gap-2 text-[#7D8C7A] text-sm mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -77,14 +77,14 @@ const Retreats = () => {
 
         {/* Additional info */}
         <div className="mt-12 text-center">
-          <p className="text-stone-500 text-sm">
+          <p className="text-[#7D8C7A] text-sm">
             {t('contact.subtitle')}{' '}
             <button 
               onClick={() => {
                 const contact = document.getElementById('contacto');
                 if (contact) contact.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="text-amber-700 hover:text-amber-800 underline underline-offset-2"
+              className="text-[#5F6B5C] hover:text-[#3E4B3F] underline underline-offset-2"
             >
               {t('header.contact')}
             </button>

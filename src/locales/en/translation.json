@@ -1,21 +1,36 @@
 {
   "header": {
     "logo": "Inner Space",
-    "courses": "Courses",
-    "community": "Community",
-    "retreats": "Retreats",
-    "reprogramming": "Reprogramming",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "bookings": "Bookings",
     "contact": "Contact"
   },
   "hero": {
     "title": "Find your inner",
     "titleHighlight": "space",
-    "subtitle": "A conscious companionship for your inner transformation through meditation courses, silent retreats, and personal growth processes.",
-    "btnCourses": "Explore courses",
-    "btnRetreats": "View retreats",
-    "feature1": "Unlimited access",
-    "feature2": "Personalized guidance",
-    "feature3": "Active community"
+    "subtitle": "A conscious companionship for your inner transformation through meditation, reflection, silent retreats, and personal growth.",
+    "btnSession": "Book a Session",
+    "btnResources": "Explore Resources",
+    "feature1": "Meditation",
+    "feature2": "Reflection",
+    "feature3": "Transformation"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "A journey of presence, deep listening, and inner transformation.",
+    "paragraph1": "My interest in self-knowledge, awareness, and inner transformation comes from the direct experience of observing life, its changes, and the challenges we all face.",
+    "paragraph2": "I accompany people who wish to understand themselves more deeply, develop a more conscious relationship with themselves, and find ways to inhabit their emotions, their processes, and their own story from a broader, more compassionate perspective.",
+    "paragraph3": "I believe in the importance of presence, deep listening, and genuine connection as tools for well-being and personal growth.",
+    "presenceTitle": "Presence",
+    "presenceDesc": "Cultivating the ability to be here and now with openness and attention.",
+    "listenTitle": "Listening",
+    "listenDesc": "Creating safe spaces where every experience can be witnessed and understood.",
+    "transformationTitle": "Transformation",
+    "transformationDesc": "Recognizing patterns, developing awareness, and opening new possibilities for growth.",
+    "ctaButton": "Schedule a Conversation"
   },
   "services": {
     "title": "Our Services",
@@ -25,7 +40,7 @@
     "retreatTitle": "Silent Retreats",
     "retreatDesc": "Immersive experiences in nature to disconnect and reconnect.",
     "coachingTitle": "Personal Coaching",
-    "coachingDesc": "Individual sessions to work on your inner growth processes."
+    "coachingDesc": "Individual sessions to support your inner growth process."
   },
   "onlineCourse": {
     "title": "Online Meditation Course",
@@ -36,7 +51,7 @@
     "module2Desc": "Techniques and exercises to develop your practice.",
     "module3": "Module 3: Deepening",
     "module3Desc": "Bringing meditation into your daily life.",
-    "enroll": "Enroll now"
+    "enroll": "Enroll Now"
   },
   "community": {
     "title": "Our Community",
@@ -44,7 +59,7 @@
     "desc1": "Monthly online meetings to practice together.",
     "desc2": "Private group for support and sharing experiences.",
     "desc3": "Exclusive resources and additional content.",
-    "join": "Join the community"
+    "join": "Join the Community"
   },
   "retreats": {
     "title": "In-Person Retreats",
@@ -54,8 +69,8 @@
     "retreat2Title": "Reconnection Weekend",
     "retreat2Desc": "An escape from routine to reconnect with yourself.",
     "retreat3Title": "Advanced Meditation Retreat",
-    "retreat3Desc": "For experienced practitioners seeking to deepen.",
-    "learnMore": "Learn more"
+    "retreat3Desc": "For experienced practitioners seeking to go deeper.",
+    "learnMore": "Learn More"
   },
   "reprogramming": {
     "title": "Mental Reprogramming",
@@ -64,21 +79,53 @@
     "benefit1": "Identify limiting patterns",
     "benefit2": "Create empowering new beliefs",
     "benefit3": "Integration into daily life",
-    "start": "Start process"
+    "start": "Begin the Process"
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "A space to share reflections, meditations, and tools that accompany your journey of self-knowledge, presence, and transformation.",
+    "featuredLabel": "Featured Reflection",
+    "featuredTitle": "The Brevity of Life",
+    "featuredText1": "Life seems long when we think about it, but brief when we observe it with attention.",
+    "featuredText2": "So often we live as if there were always more time: more time to be grateful, to listen, to say what we feel, or to fully inhabit the present moment.",
+    "featuredText3": "Remembering that our experience is finite doesn't have to create fear. It can become an invitation to live with greater awareness, presence, and depth.",
+    "featuredText4": "Perhaps the question isn't how much time we have, but how we choose to inhabit the time we've been given.",
+    "featuredButton": "Read More Reflections",
+    "reflexionesTitle": "Reflections",
+    "reflexionesDesc": "Thoughts and writings on life, presence, change, silence, and the process of inner transformation.",
+    "meditacionesTitle": "Guided Meditations",
+    "meditacionesDesc": "Practices to support you through moments of anxiety, emotional regulation, rest, and reconnection with yourself.",
+    "podcastTitle": "Podcast",
+    "podcastDesc": "Audio reflections on life's brevity, death, presence, silence, and the awakening of consciousness.",
+    "comingSoon": "Coming Soon"
+  },
+  "bookings": {
+    "title": "Bookings",
+    "subtitle": "Schedule a session, consultation, or activity and take the next step in your inner journey.",
+    "description": "Choose the space that best fits where you are right now. You can book an individual consultation, a companionship session, or request information about upcoming activities.",
+    "consultaTitle": "Individual Consultation",
+    "consultaDesc": "A personalized space to explore your process, address questions, and receive close, supportive companionship.",
+    "consultaButton": "Book Consultation",
+    "sesionTitle": "Companionship Session",
+    "sesionDesc": "An encounter to deepen your path of self-knowledge, presence, and transformation.",
+    "sesionButton": "Book Session",
+    "actividadesTitle": "Activities & Workshops",
+    "actividadesDesc": "Check upcoming dates for workshops, gatherings, meditations, or group activities.",
+    "actividadesButton": "Check Availability"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Have questions? We're here to help",
+    "subtitle": "Have questions? We're here to help.",
     "name": "Your name",
     "email": "Your email",
     "message": "Your message",
-    "send": "Send message",
+    "send": "Send Message",
     "success": "Message sent successfully",
     "error": "Error sending message"
   },
   "footer": {
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions"
+    "terms": "Terms & Conditions"
   }
 }

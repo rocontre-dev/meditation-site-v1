@@ -22,7 +22,7 @@ const Services = () => {
       ),
       title: t('services.courseTitle'),
       description: t('services.courseDesc'),
-      link: 'cursos'
+      link: 'servicios'
     },
     {
       id: 'acompanamiento',
@@ -42,7 +42,7 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
-      title: t('header.community'),
+      title: t('community.title'),
       description: t('community.subtitle'),
       link: 'comunidad'
     },
@@ -64,21 +64,21 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       ),
-      title: t('header.reprogramming'),
+      title: t('reprogramming.title'),
       description: t('reprogramming.subtitle'),
       link: 'reprogramacion'
     }
   ];
 
   return (
-    <section id="cursos" className="py-20 md:py-28 bg-white">
+    <section id="servicios" className="py-20 md:py-28 bg-[#E8E3D7]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-stone-800 mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-[#3E4B3F] mb-4 tracking-tight">
             {t('services.title')}
           </h2>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#5A6B5C] max-w-2xl mx-auto leading-relaxed">
             {t('services.subtitle')}
           </p>
         </div>
@@ -87,13 +87,13 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => (
             <Card key={service.id} className="flex flex-col h-full">
-              <div className="text-amber-600 mb-4">
+              <div className="text-[#7D8C7A] mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-medium text-stone-800 mb-3">
+              <h3 className="text-xl font-medium text-[#3E4B3F] mb-3">
                 {service.title}
               </h3>
-              <p className="text-stone-600 leading-relaxed flex-grow">
+              <p className="text-[#5A6B5C] leading-relaxed flex-grow">
                 {service.description}
               </p>
               <div className="mt-6">
