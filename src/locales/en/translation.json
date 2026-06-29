@@ -114,7 +114,13 @@
     "podcastDesc": "Audio reflections on life's brevity, death, presence, silence, and the awakening of consciousness.",
     "comingSoon": "Coming Soon",
     "reflectionsNote": "New reflections written by Fabrizio will be added soon.",
-    "podcastNote": "You'll soon be able to listen to the first podcast episodes here."
+    "podcastNote": "You'll soon be able to listen to the first podcast episodes here.",
+    "podcastSectionTitle": "Podcast",
+    "podcastSectionSubtitle": "Reflections to listen to with calm.",
+    "podcastEpisode1Title": "Episode 1",
+    "podcastEpisode1Desc": "This space will be replaced by the first episode of Fabrizio's podcast.",
+    "podcastEpisode2Title": "Episode 2",
+    "podcastEpisode2Desc": "Here will appear the second episode of Fabrizio's podcast."
   },
   "bookings": {
     "title": "Bookings",

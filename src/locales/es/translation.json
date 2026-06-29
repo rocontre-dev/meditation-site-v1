@@ -114,7 +114,13 @@
     "podcastDesc": "Reflexiones en formato de audio sobre la brevedad de la vida, la muerte, la presencia, el silencio y el despertar de la conciencia.",
     "comingSoon": "Próximamente",
     "reflectionsNote": "Próximamente se incorporarán nuevas reflexiones escritas por Fabrizio.",
-    "podcastNote": "Próximamente podrás escuchar aquí los primeros episodios del podcast."
+    "podcastNote": "Próximamente podrás escuchar aquí los primeros episodios del podcast.",
+    "podcastSectionTitle": "Podcast",
+    "podcastSectionSubtitle": "Reflexiones para escuchar con calma.",
+    "podcastEpisode1Title": "Episodio 1",
+    "podcastEpisode1Desc": "Este espacio será reemplazado por el primer episodio del podcast de Fabrizio.",
+    "podcastEpisode2Title": "Episodio 2",
+    "podcastEpisode2Desc": "Aquí aparecerá el segundo episodio del podcast de Fabrizio."
   },
   "bookings": {
     "title": "Reservas",

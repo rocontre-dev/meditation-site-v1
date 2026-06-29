@@ -38,6 +38,21 @@ const Resources = () => {
     },
   ];
 
+  const podcastEpisodes = [
+    {
+      title: t('resources.podcastEpisode1Title'),
+      description: t('resources.podcastEpisode1Desc'),
+      status: t('resources.comingSoon'),
+      url: null
+    },
+    {
+      title: t('resources.podcastEpisode2Title'),
+      description: t('resources.podcastEpisode2Desc'),
+      status: t('resources.comingSoon'),
+      url: null
+    }
+  ];
+
   return (
     <section id="recursos" className="py-20 md:py-28 bg-[#D1C2A1]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,6 +114,41 @@ const Resources = () => {
         <p className="text-center text-[#7D8C7A] text-sm italic mb-12">
           {t('resources.reflectionsNote')}
         </p>
+
+        {/* Podcast Episodes */}
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-light text-[#3E4B3F] mb-2 tracking-tight">
+              {t('resources.podcastSectionTitle')}
+            </h3>
+            <p className="text-[#5A6B5C] text-lg">
+              {t('resources.podcastSectionSubtitle')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {podcastEpisodes.map((episode, index) => (
+              <Card key={index} className="flex flex-col h-full">
+                <div className="text-[#7D8C7A] mb-4">
+                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                </div>
+                <h4 className="text-lg font-medium text-[#3E4B3F] mb-2">
+                  {episode.title}
+                </h4>
+                <p className="text-[#5A6B5C] text-sm leading-relaxed flex-grow">
+                  {episode.description}
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#F0EDE5] text-[#5F6B5C]">
+                    {episode.status}
+                  </span>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
 
         {/* Resources grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
