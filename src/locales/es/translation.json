@@ -96,6 +96,17 @@
     "noteLabel": "Nota importante",
     "note": "Este es un servicio de acompañamiento educativo y de crecimiento personal. No sustituye la terapia psicológica ni la atención médica profesional. Si estás atravesando un momento de crisis emocional intensa, recomendamos buscar apoyo profesional especializado."
   },
+  "podcastPromo": {
+    "badge": "Nuevo Podcast",
+    "title": "Escucha las reflexiones de Fabrizio",
+    "subtitle": "Dos espacios para detenerse, observar y acompañar el camino interior.",
+    "button": "Escuchar en Spotify",
+    "close": "Cerrar"
+  },
+  "featuredPodcast": {
+    "title": "Escucha las reflexiones de Fabrizio",
+    "subtitle": "Dos espacios para detenerse, observar y acompañar el camino interior a través de la palabra."
+  },
   "resources": {
     "title": "Recursos",
     "subtitle": "Un espacio para compartir reflexiones, meditaciones y herramientas que acompañen tu proceso de autoconocimiento, presencia y transformación.",
@@ -117,10 +128,11 @@
     "podcastNote": "Próximamente podrás escuchar aquí los primeros episodios del podcast.",
     "podcastSectionTitle": "Podcast",
     "podcastSectionSubtitle": "Reflexiones para escuchar con calma.",
-    "podcastEpisode1Title": "Episodio 1",
-    "podcastEpisode1Desc": "Este espacio será reemplazado por el primer episodio del podcast de Fabrizio.",
-    "podcastEpisode2Title": "Episodio 2",
-    "podcastEpisode2Desc": "Aquí aparecerá el segundo episodio del podcast de Fabrizio."
+    "podcastEpisode1Title": "Existir, la tragicomedia",
+    "podcastEpisode1Desc": "Un espacio de reflexión sobre la existencia, la vida cotidiana y las preguntas que nos acompañan.",
+    "podcastEpisode2Title": "Ikigai BIENESTAR INTERIOR",
+    "podcastEpisode2Desc": "Reflexiones y herramientas para cultivar bienestar interior, presencia y sentido en la vida cotidiana.",
+    "podcastSpotifyButton": "Escuchar en Spotify"
   },
   "bookings": {
     "title": "Reservas",

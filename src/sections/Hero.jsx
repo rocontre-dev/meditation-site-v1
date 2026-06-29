@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
+import PodcastPromoFloating from '../components/PodcastPromoFloating';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -12,11 +13,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#F0EDE5] via-[#E8E3D7] to-[#CDD7C9] pt-16 md:pt-20">
-      {/* Subtle decorative element */}
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden">
+      {/* Fondo con gradiente Zen Garden - sensación de bosque/bruma */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F0EDE5] via-[#E8E3D7] to-[#F7F3ED]" />
+      
+      {/* Elementos decorativos orgánicos - luz ambiental */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#B6C2AE]/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#9EAB9A]/15 rounded-full blur-3xl" />
+        {/* Círculos difuminados - sensación de musgo/luz filtrada */}
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-[#B6C2AE]/25 rounded-full blur-[80px]" />
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#9EAB9A]/20 rounded-full blur-[80px]" />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#D1C2A1]/15 rounded-full blur-[60px]" />
+        <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-[#B6C2AE]/10 rounded-full blur-[70px]" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -71,6 +78,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Floating Podcast Promo */}
+      <PodcastPromoFloating />
     </section>
   );
 };

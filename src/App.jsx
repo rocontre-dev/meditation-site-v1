@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Hero from './sections/Hero'
+import FeaturedPodcast from './sections/FeaturedPodcast'
 import About from './sections/About'
 import Services from './sections/Services'
 import OnlineCourse from './sections/OnlineCourse'
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <FeaturedPodcast />
         <About />
         <Services />
         <OnlineCourse />

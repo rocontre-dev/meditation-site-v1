@@ -30,6 +30,17 @@
     --color-footer-bg: #3E4B3F;
     --color-footer-text: #E8E3D7;
     --color-footer-muted: #B6C2AE;
+
+    /* Extended Zen Garden Palette */
+    --zen-moss: #7D8C7A;
+    --zen-sage: #B6C2AE;
+    --zen-sand: #E8E3D7;
+    --zen-warm-sand: #D1C2A1;
+    --zen-deep: #3E4B3F;
+    --zen-cream: #F7F3ED;
+    --zen-soft: #F0EDE5;
+    --zen-muted: #5A6B5C;
+    --zen-border: #CDD7C9;
   }
 
   body {
@@ -37,7 +48,11 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-bg-primary);
+    /* Fondo global con degradado radial sutil - sensación de luz natural */
+    background:
+      radial-gradient(circle at top left, rgba(182, 194, 174, 0.25), transparent 35%),
+      radial-gradient(circle at bottom right, rgba(209, 194, 161, 0.22), transparent 30%),
+      #F7F3ED;
     color: var(--color-text-primary);
   }
   
@@ -50,8 +65,33 @@
   }
 }
 
+/* Utilidades Zen Garden */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Tarjeta estilo editorial Zen Garden */
+  .zen-card {
+    background: rgba(247, 243, 237, 0.78);
+    border: 1px solid rgba(182, 194, 174, 0.45);
+    box-shadow: 0 18px 45px rgba(62, 75, 63, 0.08);
+    border-radius: 28px;
+    backdrop-filter: blur(14px);
+  }
+
+  /* Contenedor de sección con overflow hidden para elementos decorativos */
+  .zen-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Elemento decorativo difuminado - luz ambiental */
+  .zen-glow {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(70px);
+    opacity: 0.25;
+    pointer-events: none;
   }
 }

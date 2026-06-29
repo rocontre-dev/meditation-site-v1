@@ -96,6 +96,17 @@
     "noteLabel": "Important note",
     "note": "This is an educational and personal growth companionship service. It does not substitute psychological therapy or professional medical attention. If you're going through a moment of intense emotional crisis, we recommend seeking specialized professional support."
   },
+  "podcastPromo": {
+    "badge": "New Podcast",
+    "title": "Listen to Fabrizio's reflections",
+    "subtitle": "Two spaces to pause, reflect, and accompany the inner journey.",
+    "button": "Listen on Spotify",
+    "close": "Close"
+  },
+  "featuredPodcast": {
+    "title": "Listen to Fabrizio's reflections",
+    "subtitle": "Two spaces to pause, reflect, and accompany the inner journey through words."
+  },
   "resources": {
     "title": "Resources",
     "subtitle": "A space to share reflections, meditations, and tools that accompany your journey of self-knowledge, presence, and transformation.",
@@ -117,10 +128,11 @@
     "podcastNote": "You'll soon be able to listen to the first podcast episodes here.",
     "podcastSectionTitle": "Podcast",
     "podcastSectionSubtitle": "Reflections to listen to in stillness.",
-    "podcastEpisode1Title": "Episode 1",
-    "podcastEpisode1Desc": "The first episode of Fabrizio's podcast will appear here.",
-    "podcastEpisode2Title": "Episode 2",
-    "podcastEpisode2Desc": "The second episode of Fabrizio's podcast will appear here."
+    "podcastEpisode1Title": "Existir, la tragicomedia",
+    "podcastEpisode1Desc": "A space for reflecting on existence, everyday life and the questions that accompany us.",
+    "podcastEpisode2Title": "Ikigai BIENESTAR INTERIOR",
+    "podcastEpisode2Desc": "Reflections and practices for cultivating inner wellbeing, presence and purpose in everyday life.",
+    "podcastSpotifyButton": "Listen on Spotify"
   },
   "bookings": {
     "title": "Bookings",
