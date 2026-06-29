@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="text-white font-medium mb-4">Navigation</h4>
+            <h4 className="text-white font-medium mb-4">{t('footer.navigation')}</h4>
             <ul className="space-y-2">
               <li>
                 <button 
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-medium mb-4">Contact</h4>
+            <h4 className="text-white font-medium mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-[#B6C2AE]">
               <li>
                 <button 
@@ -90,7 +90,7 @@ const Footer = () => {
         {/* Legal */}
         <div className="border-t border-[#5F6B5C] mt-12 pt-8">
           <p className="text-[#7D8C7A] text-xs text-center md:text-left">
-            This site offers educational and personal growth companionship. The services presented here do not substitute professional medical or psychological attention.
+            {t('footer.disclaimer')}
           </p>
           <p className="text-[#5F6B5C] text-xs text-center md:text-left mt-2">
             © {new Date().getFullYear()} {t('header.logo')}. {t('footer.rights')}

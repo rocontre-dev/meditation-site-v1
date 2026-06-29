@@ -21,6 +21,8 @@
   "about": {
     "title": "Sobre mí",
     "subtitle": "Un camino de presencia, escucha y transformación interior.",
+    "photoPlaceholder": "Fotografía de Fabrizio",
+    "photoPending": "Pendiente de integrar",
     "paragraph1": "Mi interés por el autoconocimiento, la conciencia y los procesos de transformación interior nace de la experiencia directa de observar la vida, sus cambios y los desafíos que todos atravesamos.",
     "paragraph2": "Acompaño a personas que desean comprenderse con mayor profundidad, desarrollar una relación más consciente consigo mismas y encontrar recursos para habitar sus emociones, sus procesos y su propia historia desde una mirada más amplia y compasiva.",
     "paragraph3": "Creo en la importancia de la presencia, la escucha y el encuentro genuino como herramientas para el bienestar y el crecimiento personal.",
@@ -73,13 +75,26 @@
     "learnMore": "Más información"
   },
   "reprogramming": {
-    "title": "Reprogramación Mental",
-    "subtitle": "Transforma tus patrones limitantes",
+    "title": "Liberación de patrones",
+    "subtitle": "Reescritura interna del relato personal",
     "desc": "Un proceso guiado para identificar y transformar creencias y patrones que ya no te sirven, creando nuevos caminos neuronales hacia el bienestar.",
     "benefit1": "Identifica patrones limitantes",
     "benefit2": "Crea nuevas creencias potenciadoras",
     "benefit3": "Integración en la vida diaria",
-    "start": "Comenzar proceso"
+    "start": "Explorar este proceso",
+    "step1Title": "Observar",
+    "step1Desc": "Hacer visibles los patrones que se repiten en tu manera de pensar, sentir, relacionarte y decidir.",
+    "step2Title": "Comprender",
+    "step2Desc": "Reconocer de dónde provienen ciertas creencias, relatos internos y formas de responder ante la vida.",
+    "step3Title": "Reescribir",
+    "step3Desc": "Abrir la posibilidad de construir una relación más libre, consciente y compasiva contigo mismo.",
+    "step4Title": "Integrar",
+    "step4Desc": "Llevar esa nueva comprensión a la vida cotidiana mediante pequeñas decisiones conscientes.",
+    "intro": "Mucho de lo que vivimos no es realmente una elección consciente, sino la repetición de historias que aprendimos a vivir como si fueran verdad.\n\nCreencias sobre quién eres.\n\nSobre cómo debes comportarte.\n\nSobre lo que puedes o no puedes recibir.\n\nSobre cómo se supone que es la vida.\n\nCon el tiempo, estas ideas se consolidan en patrones.\n\nY los patrones se convierten en identidad.",
+    "description": "Este proceso es un espacio de diálogo consciente donde exploramos tu historia personal para observar los patrones que se repiten en tu vida emocional, mental y relacional.\n\nA través de la conversación y la escritura, se hace visible aquello que normalmente opera de forma automática.\n\nNo se trata de corregirte ni de convertirte en alguien distinto.\n\nSe trata de mirar con claridad las historias que has aprendido a habitar para recuperar la posibilidad de elegir desde un lugar más consciente.",
+    "processTitle": "¿En qué consiste este proceso?",
+    "noteLabel": "Nota importante",
+    "note": "Este es un servicio de acompañamiento educativo y de crecimiento personal. No sustituye la terapia psicológica ni la atención médica profesional. Si estás atravesando un momento de crisis emocional intensa, recomendamos buscar apoyo profesional especializado."
   },
   "resources": {
     "title": "Recursos",
@@ -97,7 +112,9 @@
     "meditacionesDesc": "Prácticas para acompañarte en momentos de ansiedad, regulación emocional, descanso y conexión contigo mismo.",
     "podcastTitle": "Podcast",
     "podcastDesc": "Reflexiones en formato de audio sobre la brevedad de la vida, la muerte, la presencia, el silencio y el despertar de la conciencia.",
-    "comingSoon": "Próximamente"
+    "comingSoon": "Próximamente",
+    "reflectionsNote": "Próximamente se incorporarán nuevas reflexiones escritas por Fabrizio.",
+    "podcastNote": "Próximamente podrás escuchar aquí los primeros episodios del podcast."
   },
   "bookings": {
     "title": "Reservas",
@@ -121,11 +138,20 @@
     "message": "Tu mensaje",
     "send": "Enviar mensaje",
     "success": "Mensaje enviado con éxito",
-    "error": "Error al enviar el mensaje"
+    "error": "Error al enviar el mensaje",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@correo.com",
+    "serviceLabel": "Servicio de interés",
+    "servicePlaceholder": "Selecciona un servicio",
+    "serviceOther": "Otro",
+    "successMessage": "Te responderemos lo antes posible."
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
-    "terms": "Términos y Condiciones"
+    "terms": "Términos y Condiciones",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "disclaimer": "Este sitio ofrece acompañamiento educativo y de crecimiento personal. Los servicios presentados aquí no sustituyen la atención médica o psicológica profesional."
   }
 }

@@ -21,6 +21,8 @@
   "about": {
     "title": "About",
     "subtitle": "A journey of presence, deep listening, and inner transformation.",
+    "photoPlaceholder": "Fabrizio's Photograph",
+    "photoPending": "Coming soon",
     "paragraph1": "My interest in self-knowledge, awareness, and inner transformation comes from the direct experience of observing life, its changes, and the challenges we all face.",
     "paragraph2": "I accompany people who wish to understand themselves more deeply, develop a more conscious relationship with themselves, and find ways to inhabit their emotions, their processes, and their own story from a broader, more compassionate perspective.",
     "paragraph3": "I believe in the importance of presence, deep listening, and genuine connection as tools for well-being and personal growth.",
@@ -73,13 +75,26 @@
     "learnMore": "Learn More"
   },
   "reprogramming": {
-    "title": "Mental Reprogramming",
-    "subtitle": "Transform your limiting patterns",
+    "title": "Pattern Release",
+    "subtitle": "Rewriting the Inner Story",
     "desc": "A guided process to identify and transform beliefs and patterns that no longer serve you, creating new neural pathways toward well-being.",
     "benefit1": "Identify limiting patterns",
     "benefit2": "Create empowering new beliefs",
     "benefit3": "Integration into daily life",
-    "start": "Begin the Process"
+    "start": "Explore This Process",
+    "step1Title": "Observe",
+    "step1Desc": "Make visible the patterns that repeat in how you think, feel, relate, and make decisions.",
+    "step2Title": "Understand",
+    "step2Desc": "Recognize where certain beliefs, inner stories, and ways of responding to life come from.",
+    "step3Title": "Rewrite",
+    "step3Desc": "Open the possibility of building a freer, more conscious, and compassionate relationship with yourself.",
+    "step4Title": "Integrate",
+    "step4Desc": "Bring that new understanding into daily life through small conscious decisions.",
+    "intro": "Much of what we experience isn't truly a conscious choice, but the repetition of stories we learned to live as if they were truth.\n\nBeliefs about who you are.\n\nAbout how you should behave.\n\nAbout what you can or cannot receive.\n\nAbout how life is supposed to be.\n\nOver time, these ideas solidify into patterns.\n\nAnd patterns become identity.",
+    "description": "This process is a space of conscious dialogue where we explore your personal history to observe the patterns that repeat in your emotional, mental, and relational life.\n\nThrough conversation and writing, what normally operates automatically becomes visible.\n\nIt's not about fixing you or turning you into someone different.\n\nIt's about looking clearly at the stories you've learned to inhabit to reclaim the possibility of choosing from a more conscious place.",
+    "processTitle": "What Is This Process?",
+    "noteLabel": "Important note",
+    "note": "This is an educational and personal growth companionship service. It does not substitute psychological therapy or professional medical attention. If you're going through a moment of intense emotional crisis, we recommend seeking specialized professional support."
   },
   "resources": {
     "title": "Resources",
@@ -97,7 +112,9 @@
     "meditacionesDesc": "Practices to support you through moments of anxiety, emotional regulation, rest, and reconnection with yourself.",
     "podcastTitle": "Podcast",
     "podcastDesc": "Audio reflections on life's brevity, death, presence, silence, and the awakening of consciousness.",
-    "comingSoon": "Coming Soon"
+    "comingSoon": "Coming Soon",
+    "reflectionsNote": "New reflections written by Fabrizio will be added soon.",
+    "podcastNote": "You'll soon be able to listen to the first podcast episodes here."
   },
   "bookings": {
     "title": "Bookings",
@@ -121,11 +138,20 @@
     "message": "Your message",
     "send": "Send Message",
     "success": "Message sent successfully",
-    "error": "Error sending message"
+    "error": "Error sending message",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "serviceLabel": "Service of interest",
+    "servicePlaceholder": "Select a service",
+    "serviceOther": "Other",
+    "successMessage": "We'll respond as soon as possible."
   },
   "footer": {
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
+    "terms": "Terms & Conditions",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "disclaimer": "This site offers educational and personal growth support. The services presented here do not replace professional medical or psychological care."
   }
 }

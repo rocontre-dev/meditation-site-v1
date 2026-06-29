@@ -7,23 +7,23 @@ const Reprogramming = () => {
   const steps = [
     {
       number: '01',
-      title: t('reprogramming.benefit1'),
-      description: t('reprogramming.desc')
+      title: t('reprogramming.step1Title'),
+      description: t('reprogramming.step1Desc')
     },
     {
       number: '02',
-      title: 'Exploration & Dialogue',
-      description: 'Through guided communication, we explore what emerges with supportive questions and reflections.'
+      title: t('reprogramming.step2Title'),
+      description: t('reprogramming.step2Desc')
     },
     {
       number: '03',
-      title: 'Pattern Recognition',
-      description: 'Together we identify limiting beliefs and programs that arose as responses to past experiences.'
+      title: t('reprogramming.step3Title'),
+      description: t('reprogramming.step3Desc')
     },
     {
       number: '04',
-      title: t('reprogramming.benefit2'),
-      description: t('reprogramming.benefit3')
+      title: t('reprogramming.step4Title'),
+      description: t('reprogramming.step4Desc')
     }
   ];
 
@@ -44,10 +44,10 @@ const Reprogramming = () => {
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-[#F0EDE5] rounded-2xl p-8 md:p-10">
             <p className="text-[#5A6B5C] leading-relaxed text-lg mb-6">
-              {t('hero.subtitle')}
+              {t('reprogramming.intro')}
             </p>
             <p className="text-[#5A6B5C] leading-relaxed">
-              This service provides a safe space to explore your story with conscious companionship and recognize the programs you've been operating unconsciously. It's not about healing in a medical sense, but about understanding, recognizing, and choosing more freely how you want to live.
+              {t('reprogramming.description')}
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Reprogramming = () => {
         {/* Process steps */}
         <div className="max-w-4xl mx-auto">
           <h3 className="text-xl font-medium text-[#3E4B3F] text-center mb-10">
-            How does the process work?
+            {t('reprogramming.processTitle')}
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -85,7 +85,7 @@ const Reprogramming = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p className="text-[#5A6B5C] text-sm leading-relaxed">
-                <strong>Important note:</strong> This is an educational and personal growth companionship service. It does not substitute psychological therapy or professional medical attention. If you're going through a moment of intense emotional crisis, we recommend seeking specialized professional support.
+                <strong>{t('reprogramming.noteLabel')}:</strong> {t('reprogramming.note')}
               </p>
             </div>
           </div>
@@ -94,8 +94,8 @@ const Reprogramming = () => {
         {/* CTA */}
         <div className="mt-12 text-center">
           <Button variant="primary" onClick={() => {
-            const contact = document.getElementById('contacto');
-            if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+            const reservas = document.getElementById('reservas');
+            if (reservas) reservas.scrollIntoView({ behavior: 'smooth' });
           }}>
             {t('reprogramming.start')}
           </Button>

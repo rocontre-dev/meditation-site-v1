@@ -59,7 +59,7 @@ const Contact = () => {
                   {t('contact.success')}
                 </h3>
                 <p className="text-[#5A6B5C]">
-                  We'll respond as soon as possible.
+                  {t('contact.successMessage')}
                 </p>
               </div>
             ) : (
@@ -90,7 +90,7 @@ const Contact = () => {
                     htmlFor="email" 
                     className="block text-sm font-medium text-[#3E4B3F] mb-2"
                   >
-                    Email
+                    {t('contact.emailLabel')}
                   </label>
                   <input
                     type="email"
@@ -100,7 +100,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all"
-                    placeholder="your@email.com"
+                    placeholder={t('contact.emailPlaceholder')}
                   />
                 </div>
 
@@ -110,7 +110,7 @@ const Contact = () => {
                     htmlFor="service" 
                     className="block text-sm font-medium text-[#3E4B3F] mb-2"
                   >
-                    Service of interest
+                    {t('contact.serviceLabel')}
                   </label>
                   <select
                     id="service"
@@ -119,13 +119,13 @@ const Contact = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all bg-white"
                   >
-                    <option value="">Select a service</option>
+                    <option value="">{t('contact.servicePlaceholder')}</option>
                     <option value="curso">{t('onlineCourse.title')}</option>
                     <option value="acompanamiento">{t('services.coachingTitle')}</option>
                     <option value="comunidad">{t('community.title')}</option>
                     <option value="retiro">{t('retreats.title')}</option>
                     <option value="reprogramacion">{t('reprogramming.title')}</option>
-                    <option value="otro">Other</option>
+                    <option value="otro">{t('contact.serviceOther')}</option>
                   </select>
                 </div>
 

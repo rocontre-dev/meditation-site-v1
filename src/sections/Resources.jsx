@@ -95,6 +95,11 @@ const Resources = () => {
           </div>
         </div>
 
+        {/* Editorial note */}
+        <p className="text-center text-[#7D8C7A] text-sm italic mb-12">
+          {t('resources.reflectionsNote')}
+        </p>
+
         {/* Resources grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {resources.map((resource) => (
@@ -108,6 +113,11 @@ const Resources = () => {
               <p className="text-[#5A6B5C] leading-relaxed flex-grow">
                 {resource.description}
               </p>
+              {resource.id === 'podcast' && (
+                <p className="text-[#7D8C7A] text-xs italic mt-4">
+                  {t('resources.podcastNote')}
+                </p>
+              )}
               <div className="mt-6">
                 <Button
                   variant="secondary"

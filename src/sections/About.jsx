@@ -57,8 +57,11 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <p className="text-[#5A6B5C] text-sm italic">
-                  Fabricio
+                <p className="text-[#5A6B5C] text-sm font-medium mb-1">
+                  {t('about.photoPlaceholder')}
+                </p>
+                <p className="text-[#7D8C7A] text-xs italic">
+                  {t('about.photoPending')}
                 </p>
               </div>
             </div>
