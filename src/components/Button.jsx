@@ -1,10 +1,10 @@
 const Button = ({ children, variant = 'primary', onClick, type = 'button', className = '', ...props }) => {
-  const baseStyles = 'inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-350 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#F7F3ED]';
+  const baseStyles = 'inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--zen-cream)]';
   
   const variants = {
-    primary: 'bg-[#3E4B3F] text-white hover:bg-[#2D382E] focus:ring-[#7D8C7A] shadow-sm',
-    secondary: 'bg-white/70 text-[#3E4B3F] border-2 border-[#7D8C7A] hover:bg-[#B6C2AE]/20 focus:ring-[#7D8C7A] backdrop-blur-sm',
-    accent: 'bg-[#B6C2AE] text-white hover:bg-[#9EAB9A] focus:ring-[#B6C2AE] shadow-sm',
+    primary: 'bg-[var(--zen-deep)] text-[var(--zen-cream)] hover:bg-[var(--zen-moss)] focus:ring-[var(--zen-moss)] shadow-[var(--zen-shadow-soft)]',
+    secondary: 'bg-[var(--zen-cream)]/70 text-[var(--zen-deep)] border-2 border-[var(--zen-moss)] hover:bg-[var(--zen-sage)]/20 focus:ring-[var(--zen-moss)] backdrop-blur-sm',
+    accent: 'bg-[var(--zen-sage)] text-[var(--zen-deep)] hover:bg-[var(--zen-muted)] focus:ring-[var(--zen-sage)] shadow-[var(--zen-shadow-soft)]',
   };
 
   return (

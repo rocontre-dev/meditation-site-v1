@@ -24,12 +24,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-[#F7F3ED]/85 backdrop-blur-md z-50 border-b border-[#CDD7C9]/40 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 bg-[var(--zen-cream)]/85 backdrop-blur-md z-50 border-b border-[var(--zen-border)]/40 shadow-[var(--zen-shadow-soft)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-xl md:text-2xl font-light text-[#3E4B3F] tracking-wide">
+            <span className="text-xl md:text-2xl font-light text-[var(--zen-deep)] tracking-wide">
               {t('header.logo')}
             </span>
           </div>
@@ -40,7 +40,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-[#5A6B5C] hover:text-[#7D8C7A] transition-colors"
+                className="text-[var(--zen-muted)] hover:text-[var(--zen-moss)] transition-colors"
               >
                 {item.label}
               </button>
@@ -63,7 +63,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-[#5A6B5C] hover:text-[#7D8C7A]"
+                className="text-[var(--zen-muted)] hover:text-[var(--zen-moss)]"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? (
@@ -83,13 +83,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#E8E3D7] border-t border-[#CDD7C9]">
+        <div className="md:hidden bg-[var(--zen-sand)] border-t border-[var(--zen-border)]">
           <nav className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-3 py-2 text-[#5A6B5C] hover:text-[#7D8C7A] hover:bg-[#CDD7C9] transition-colors"
+                className="block w-full text-left px-3 py-2 text-[var(--zen-muted)] hover:text-[var(--zen-moss)] hover:bg-[var(--zen-border)] transition-colors"
               >
                 {item.label}
               </button>

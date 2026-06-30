@@ -54,7 +54,7 @@ const PodcastPromoFloating = () => {
         fixed z-50
         bottom-6 right-6
         md:bottom-8 md:right-8
-        transition-all duration-400 ease-out
+        transition-all duration-500 ease-out
         ${isExpanded ? 'translate-x-0' : 'translate-x-0'}
         ${isVisible ? 'opacity-100' : 'opacity-0'}
       `}
@@ -64,13 +64,13 @@ const PodcastPromoFloating = () => {
       <div
         className={`
           relative overflow-hidden
-          bg-[#F7F3ED]/88 backdrop-blur-md
-          border border-[#B6C2AE]/40
-          rounded-[28px]
-          shadow-[0_18px_45px_rgba(62,75,63,0.12)]
+          bg-[var(--zen-cream)]/88 backdrop-blur-md
+          border border-[var(--zen-sage)]/40
+          rounded-[var(--zen-radius-xl)]
+          shadow-[var(--zen-shadow-medium)]
           transition-all duration-500 ease-out
           ${isExpanded ? 'w-72 p-4' : 'w-auto px-4 py-3'}
-          ${isPulsing ? 'scale-103' : 'scale-100'}
+          ${isPulsing ? 'shadow-[var(--zen-shadow-float)]' : ''}
         `}
         style={{
           transition: 'transform 0.7s ease-in-out, width 0.5s ease-out, opacity 0.5s ease-out'
@@ -84,9 +84,9 @@ const PodcastPromoFloating = () => {
             absolute top-2 right-2
             w-6 h-6
             flex items-center justify-center
-            text-[#7D8C7A] hover:text-[#5F6B5C]
+            text-[var(--zen-moss)] hover:text-[var(--zen-muted)]
             transition-colors
-            focus:outline-none focus:ring-2 focus:ring-[#7D8C7A] focus:ring-offset-2 rounded-full
+            focus:outline-none focus:ring-2 focus:ring-[var(--zen-moss)] focus:ring-offset-2 focus:ring-offset-[var(--zen-cream)] rounded-full
           "
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,12 +99,12 @@ const PodcastPromoFloating = () => {
           {/* Collapsed state - badge only */}
           {!isExpanded && (
             <div className="flex items-center gap-2">
-              <div className="text-[#7D8C7A]">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--zen-sand)]">
+                <svg className="w-4 h-4 text-[var(--zen-moss)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                 </svg>
               </div>
-              <span className="text-xs font-medium text-[#5F6B5C]">
+              <span className="text-xs font-medium text-[var(--zen-muted)]">
                 {t('podcastPromo.badge')}
               </span>
             </div>
@@ -115,23 +115,23 @@ const PodcastPromoFloating = () => {
             <div className="space-y-3">
               {/* Badge */}
               <div className="flex items-center gap-2">
-                <div className="text-[#7D8C7A]">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--zen-sand)]">
+                  <svg className="w-4 h-4 text-[var(--zen-moss)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
                   </svg>
                 </div>
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#F0EDE5] text-[#5F6B5C]">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[var(--zen-soft)] text-[var(--zen-muted)]">
                   {t('podcastPromo.badge')}
                 </span>
               </div>
 
               {/* Title */}
-              <h4 className="text-sm font-medium text-[#3E4B3F] leading-tight">
+              <h4 className="text-sm font-medium text-[var(--zen-deep)] leading-tight">
                 {t('podcastPromo.title')}
               </h4>
 
               {/* Subtitle */}
-              <p className="text-xs text-[#5A6B5C] leading-relaxed">
+              <p className="text-xs text-[var(--zen-muted)] leading-relaxed">
                 {t('podcastPromo.subtitle')}
               </p>
 

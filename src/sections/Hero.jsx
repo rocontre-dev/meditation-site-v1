@@ -13,67 +13,73 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden">
-      {/* Fondo con gradiente Zen Garden - sensación de bosque/bruma */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#F0EDE5] via-[#E8E3D7] to-[#F7F3ED]" />
-      
+    <section id="inicio" className="zen-background zen-section relative min-h-screen flex items-center justify-center pt-24 md:pt-28 overflow-hidden">
       {/* Elementos decorativos orgánicos - luz ambiental */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Círculos difuminados - sensación de musgo/luz filtrada */}
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-[#B6C2AE]/25 rounded-full blur-[80px]" />
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#9EAB9A]/20 rounded-full blur-[80px]" />
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#D1C2A1]/15 rounded-full blur-[60px]" />
-        <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-[#B6C2AE]/10 rounded-full blur-[70px]" />
+        {/* Orbs decorativos */}
+        <div className="zen-orb zen-orb--sage" style={{ width: '500px', height: '500px', top: '-150px', right: '-100px' }}></div>
+        <div className="zen-orb zen-orb--moss" style={{ width: '400px', height: '400px', bottom: '-100px', left: '-100px' }}></div>
+        <div className="zen-orb zen-orb--warm" style={{ width: '300px', height: '300px', top: '25%', left: '25%' }}></div>
+        
+        {/* Luces ambientales */}
+        <div className="zen-ambient-light zen-ambient-light--top-left"></div>
+        <div className="zen-ambient-light zen-ambient-light--warm zen-ambient-light--bottom-right"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#3E4B3F] leading-tight mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[var(--zen-deep)] leading-tight mb-8 tracking-wide">
           {t('hero.title')}<br className="hidden md:block" />
           <span className="font-normal">{t('hero.titleHighlight')}</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-[#5A6B5C] leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-lg md:text-xl text-[var(--zen-muted)] leading-relaxed max-w-2xl mx-auto mb-12">
           {t('hero.subtitle')}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <Button 
             variant="primary" 
             onClick={() => scrollToSection('reservas')}
-            className="w-full sm:w-auto min-w-[180px]"
+            className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnSession')}
           </Button>
           <Button 
             variant="secondary" 
             onClick={() => scrollToSection('recursos')}
-            className="w-full sm:w-auto min-w-[180px]"
+            className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnResources')}
           </Button>
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-[#5A6B5C] text-sm">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#7D8C7A]" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-            </svg>
+        <div className="mt-20 flex flex-wrap items-center justify-center gap-10 text-[var(--zen-muted)] text-sm">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-sand)]">
+              <svg className="w-5 h-5 text-[var(--zen-moss)]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+              </svg>
+            </div>
             <span>{t('hero.feature1')}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#7D8C7A]" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-            </svg>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-sand)]">
+              <svg className="w-5 h-5 text-[var(--zen-moss)]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+              </svg>
+            </div>
             <span>{t('hero.feature2')}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-[#7D8C7A]" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-            </svg>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-sand)]">
+              <svg className="w-5 h-5 text-[var(--zen-moss)]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+              </svg>
+            </div>
             <span>{t('hero.feature3')}</span>
           </div>
         </div>

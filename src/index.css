@@ -1,46 +1,91 @@
 @import "tailwindcss";
 
-/* Zen Garden Color Palette - Jardín Zen */
+/* ═══════════════════════════════════════════════════════════════
+   ZEN GARDEN — DESIGN SYSTEM
+   Sistema visual oficial del proyecto meditation-site
+   
+   Filosofía: Minimalismo orgánico, calma visual, profundidad sutil
+   Inspiración: Jardines zen, wabi-sabi, luz natural filtrada
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ────────────────────────────────────────────────────────────────
+   1. TOKENS DE COLOR
+   Paleta inspirada en elementos naturales: musgo, salvia, arena, piedra
+   ──────────────────────────────────────────────────────────────── */
 @layer base {
   :root {
-    /* Primary - Verde musgo suave */
-    --color-primary: #7D8C7A;
+    /* ═══ Paleta Principal Zen Garden ═══ */
+    --zen-moss: #7D8C7A;         /* Verde musgo suave - primario */
+    --zen-sage: #B6C2AE;         /* Verde salvia - secundario */
+    --zen-sand: #E8E3D7;         /* Arena clara - fondo primario */
+    --zen-warm-sand: #D1C2A1;    /* Arena cálida - acento */
+    --zen-deep: #3E4B3F;         /* Verde profundo - texto principal */
+    --zen-cream: #F7F3ED;        /* Crema - fondo base */
+    --zen-soft: #F0EDE5;         /* Suave - fondo secundario */
+    --zen-muted: #5A6B5C;        /* Atenuado - texto secundario */
+    --zen-border: #CDD7C9;       /* Borde sutil */
+
+    /* ═══ Variantes de Color Primario ═══ */
+    --color-primary: var(--zen-moss);
     --color-primary-light: #9AA897;
     --color-primary-dark: #5F6B5C;
-    
-    /* Secondary - Verde salvia claro */
-    --color-secondary: #B6C2AE;
-    --color-secondary-light: #CDD7C9;
-    --color-secondary-dark: #9EAB9A;
-    
-    /* Background - Arena clara */
-    --color-bg-primary: #E8E3D7;
-    --color-bg-secondary: #F0EDE5;
-    
-    /* Background alternativo - Arena cálida */
-    --color-bg-accent: #D1C2A1;
-    --color-bg-accent-light: #DDD0B5;
-    
-    /* Text - Verde profundo */
-    --color-text-primary: #3E4B3F;
-    --color-text-secondary: #5A6B5C;
-    --color-text-muted: #7D8C7A;
-    
-    /* Footer dark */
-    --color-footer-bg: #3E4B3F;
-    --color-footer-text: #E8E3D7;
-    --color-footer-muted: #B6C2AE;
 
-    /* Extended Zen Garden Palette */
-    --zen-moss: #7D8C7A;
-    --zen-sage: #B6C2AE;
-    --zen-sand: #E8E3D7;
-    --zen-warm-sand: #D1C2A1;
-    --zen-deep: #3E4B3F;
-    --zen-cream: #F7F3ED;
-    --zen-soft: #F0EDE5;
-    --zen-muted: #5A6B5C;
-    --zen-border: #CDD7C9;
+    /* ═══ Variantes de Color Secundario ═══ */
+    --color-secondary: var(--zen-sage);
+    --color-secondary-light: var(--zen-border);
+    --color-secondary-dark: #9EAB9A;
+
+    /* ═══ Fondos ═══ */
+    --color-bg-primary: var(--zen-sand);
+    --color-bg-secondary: var(--zen-soft);
+    --color-bg-accent: var(--zen-warm-sand);
+    --color-bg-accent-light: #DDD0B5;
+
+    /* ═══ Texto ═══ */
+    --color-text-primary: var(--zen-deep);
+    --color-text-secondary: var(--zen-muted);
+    --color-text-muted: var(--zen-moss);
+
+    /* ═══ Footer ═══ */
+    --color-footer-bg: var(--zen-deep);
+    --color-footer-text: var(--zen-sand);
+    --color-footer-muted: var(--zen-sage);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     2. TIPOGRAFÍA
+     Sistema tipográfico documentado (fuente no modificada)
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    /* Tamaños de fuente base */
+    --zen-font-xs: 0.75rem;      /* 12px - texto muy pequeño */
+    --zen-font-sm: 0.875rem;     /* 14px - texto secundario */
+    --zen-font-base: 1rem;       /* 16px - cuerpo de texto */
+    --zen-font-md: 1.125rem;     /* 18px - párrafos destacados */
+    --zen-font-lg: 1.25rem;      /* 20px - subtítulos */
+    --zen-font-xl: 1.5rem;       /* 24px - títulos pequeños */
+    --zen-font-2xl: 2rem;        /* 32px - títulos medianos */
+    --zen-font-3xl: 2.5rem;      /* 40px - títulos grandes */
+    --zen-font-4xl: 3rem;        /* 48px - hero titles */
+
+    /* Pesos */
+    --zen-font-light: 300;
+    --zen-font-regular: 400;
+    --zen-font-medium: 500;
+    --zen-font-semibold: 600;
+    --zen-font-bold: 700;
+
+    /* Altura de línea */
+    --zen-leading-tight: 1.25;
+    --zen-leading-normal: 1.5;
+    --zen-leading-relaxed: 1.75;
+    --zen-leading-loose: 2;
+
+    /* Espaciado entre letras */
+    --zen-tracking-tight: -0.02em;
+    --zen-tracking-normal: 0;
+    --zen-tracking-wide: 0.02em;
+    --zen-tracking-wider: 0.05em;
   }
 
   body {
@@ -48,14 +93,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Fondo global con degradado radial sutil - sensación de luz natural */
-    background:
-      radial-gradient(circle at top left, rgba(182, 194, 174, 0.25), transparent 35%),
-      radial-gradient(circle at bottom right, rgba(209, 194, 161, 0.22), transparent 30%),
-      #F7F3ED;
     color: var(--color-text-primary);
   }
-  
+
   * {
     box-sizing: border-box;
   }
@@ -63,35 +103,501 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* ──────────────────────────────────────────────────────────────
+     3. RADIOS (BORDER RADIUS)
+     Bordes orgánicos suaves, inspirados en piedras de río
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-radius-sm: 8px;        /* Bordes sutilmente redondeados */
+    --zen-radius-md: 16px;       /* Redondeado medio */
+    --zen-radius-lg: 24px;       /* Redondeado generoso */
+    --zen-radius-xl: 32px;       /* Muy redondeado */
+    --zen-radius-2xl: 48px;      /* Extremadamente redondeado */
+    --zen-radius-full: 9999px;   /* Círculo completo */
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     4. SOMBRAS
+     Sombras ultra suaves, nunca negras puras.
+     Inspiradas en luz natural difusa.
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    /* Sombra suave - para elementos elevados ligeramente */
+    --zen-shadow-soft: 0 4px 20px rgba(62, 75, 63, 0.06);
+
+    /* Sombra media - para tarjetas y elementos flotantes */
+    --zen-shadow-medium: 0 12px 36px rgba(62, 75, 63, 0.08);
+
+    /* Sombra glass - para elementos con glassmorphism */
+    --zen-shadow-glass: 0 8px 32px rgba(62, 75, 63, 0.07);
+
+    /* Sombra elevada - para elementos destacados */
+    --zen-shadow-elevated: 0 20px 60px rgba(62, 75, 63, 0.1);
+
+    /* Sombra flotante - efecto de levitación suave */
+    --zen-shadow-float: 0 16px 48px rgba(62, 75, 63, 0.09);
+
+    /* Sombra interna - para profundidad sutil */
+    --zen-shadow-inner: inset 0 2px 8px rgba(62, 75, 63, 0.04);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     5. TRANSICIONES
+     Movimientos calmados, ease-out natural
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-transition-fast: 150ms ease;
+    --zen-transition-normal: 300ms ease;
+    --zen-transition-slow: 500ms ease;
+    --zen-transition-slower: 800ms ease;
+
+    /* Curvas de easing personalizadas */
+    --zen-ease-out-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --zen-ease-in-out-gentle: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     6. GLASSMORPHISM
+     Efecto de vidrio esmerilado, luz filtrada
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-glass-blur: 14px;
+    --zen-glass-bg: rgba(247, 243, 237, 0.78);
+    --zen-glass-bg-light: rgba(247, 243, 237, 0.6);
+    --zen-glass-bg-dark: rgba(62, 75, 63, 0.7);
+    --zen-glass-border: rgba(182, 194, 174, 0.45);
+    --zen-glass-border-light: rgba(182, 194, 174, 0.25);
+    --zen-glass-shadow: 0 8px 32px rgba(62, 75, 63, 0.07);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     7. ESPACIADO (SPACING SCALE)
+     Escala basada en múltiplos de 4, ritmo orgánico
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-space-1: 4px;
+    --zen-space-2: 8px;
+    --zen-space-3: 12px;
+    --zen-space-4: 16px;
+    --zen-space-5: 20px;
+    --zen-space-6: 24px;
+    --zen-space-8: 32px;
+    --zen-space-10: 40px;
+    --zen-space-12: 48px;
+    --zen-space-16: 64px;
+    --zen-space-20: 80px;
+    --zen-space-24: 96px;
+    --zen-space-32: 128px;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     8. OPACIDADES
+     Niveles de transparencia para capas y superposiciones
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-opacity-subtle: 0.05;
+    --zen-opacity-light: 0.1;
+    --zen-opacity-medium: 0.2;
+    --zen-opacity-strong: 0.4;
+    --zen-opacity-solid: 0.8;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     9. Z-INDEX SCALE
+     Capas ordenadas para composición visual
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --zen-z-base: 0;
+    --zen-z-raised: 10;
+    --zen-z-dropdown: 100;
+    --zen-z-sticky: 200;
+    --zen-z-overlay: 300;
+    --zen-z-modal: 400;
+    --zen-z-tooltip: 500;
+    --zen-z-toast: 600;
+  }
 }
 
-/* Utilidades Zen Garden */
+/* ═══════════════════════════════════════════════════════════════
+   UTILIDADES ZEN GARDEN
+   Clases reutilizables para todo el proyecto
+   ═══════════════════════════════════════════════════════════════ */
+
 @layer utilities {
+  /* ──────────────────────────────────────────────────────────────
+     TEXT UTILITIES
+     ────────────────────────────────────────────────────────────── */
   .text-balance {
     text-wrap: balance;
   }
 
-  /* Tarjeta estilo editorial Zen Garden */
-  .zen-card {
-    background: rgba(247, 243, 237, 0.78);
-    border: 1px solid rgba(182, 194, 174, 0.45);
-    box-shadow: 0 18px 45px rgba(62, 75, 63, 0.08);
-    border-radius: 28px;
-    backdrop-filter: blur(14px);
+  .text-gradient-zen {
+    background: linear-gradient(135deg, var(--zen-moss) 0%, var(--zen-muted) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
-  /* Contenedor de sección con overflow hidden para elementos decorativos */
+  /* ──────────────────────────────────────────────────────────────
+     FONDO GLOBAL
+     Gradientes radiales sutiles que simulan luz natural
+     ────────────────────────────────────────────────────────────── */
+  .zen-background {
+    background:
+      radial-gradient(circle at top left, rgba(182, 194, 174, 0.25), transparent 35%),
+      radial-gradient(circle at bottom right, rgba(209, 194, 161, 0.22), transparent 30%),
+      var(--zen-cream);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CONTENEDOR DE SECCIÓN
+     Overflow hidden para elementos decorativos internos
+     ────────────────────────────────────────────────────────────── */
   .zen-section {
     position: relative;
     overflow: hidden;
   }
 
-  /* Elemento decorativo difuminado - luz ambiental */
+  /* ──────────────────────────────────────────────────────────────
+     TARJETA EDITORIAL
+     Estilo glassmorphism con bordes sutiles
+     ────────────────────────────────────────────────────────────── */
+  .zen-card {
+    background: var(--zen-glass-bg);
+    border: 1px solid var(--zen-glass-border);
+    box-shadow: var(--zen-shadow-medium);
+    border-radius: var(--zen-radius-xl);
+    backdrop-filter: blur(var(--zen-glass-blur));
+    -webkit-backdrop-filter: blur(var(--zen-glass-blur));
+    transition: all var(--zen-transition-normal);
+  }
+
+  .zen-card:hover {
+    box-shadow: var(--zen-shadow-elevated);
+    transform: translateY(-2px);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     GLASSMORPHISM COMPLETO
+     Efecto de vidrio esmerilado reutilizable
+     ────────────────────────────────────────────────────────────── */
+  .zen-glass {
+    background: var(--zen-glass-bg);
+    backdrop-filter: blur(var(--zen-glass-blur));
+    -webkit-backdrop-filter: blur(var(--zen-glass-blur));
+    border: 1px solid var(--zen-glass-border);
+    box-shadow: var(--zen-shadow-glass);
+  }
+
+  .zen-glass-dark {
+    background: var(--zen-glass-bg-dark);
+    backdrop-filter: blur(var(--zen-glass-blur));
+    -webkit-backdrop-filter: blur(var(--zen-glass-blur));
+    border: 1px solid var(--zen-glass-border-light);
+    box-shadow: var(--zen-shadow-glass);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     LUZ AMBIENTAL
+     Elemento decorativo difuminado - glow suave
+     ────────────────────────────────────────────────────────────── */
   .zen-glow {
     position: absolute;
-    border-radius: 9999px;
+    border-radius: var(--zen-radius-full);
     filter: blur(70px);
     opacity: 0.25;
     pointer-events: none;
+    z-index: var(--zen-z-base);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     ORB DECORATIVO
+     Círculos difuminados para decoración de fondo
+     ────────────────────────────────────────────────────────────── */
+  .zen-orb {
+    position: absolute;
+    border-radius: var(--zen-radius-full);
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: var(--zen-z-base);
+  }
+
+  .zen-orb--moss {
+    background: rgba(125, 140, 122, 0.3);
+  }
+
+  .zen-orb--sage {
+    background: rgba(182, 194, 174, 0.3);
+  }
+
+  .zen-orb--sand {
+    background: rgba(232, 227, 215, 0.4);
+  }
+
+  .zen-orb--warm {
+    background: rgba(209, 194, 161, 0.3);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     GRADIENTE SUAVE SUPERPUESTO
+     Capa de gradiente para profundidad visual
+     ────────────────────────────────────────────────────────────── */
+  .zen-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(247, 243, 237, 0) 0%,
+      rgba(247, 243, 237, 0.5) 100%
+    );
+    pointer-events: none;
+    z-index: var(--zen-z-raised);
+  }
+
+  .zen-gradient-overlay--dark {
+    background: linear-gradient(
+      180deg,
+      rgba(62, 75, 63, 0) 0%,
+      rgba(62, 75, 63, 0.3) 100%
+    );
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     LUZ AMBIENTAL POSICIONABLE
+     Puntos de luz para crear atmósfera
+     ────────────────────────────────────────────────────────────── */
+  .zen-ambient-light {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: var(--zen-radius-full);
+    background: radial-gradient(
+      circle,
+      rgba(182, 194, 174, 0.15) 0%,
+      transparent 70%
+    );
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: var(--zen-z-base);
+  }
+
+  .zen-ambient-light--warm {
+    background: radial-gradient(
+      circle,
+      rgba(209, 194, 161, 0.2) 0%,
+      transparent 70%
+    );
+  }
+
+  .zen-ambient-light--top-left {
+    top: -150px;
+    left: -150px;
+  }
+
+  .zen-ambient-light--top-right {
+    top: -150px;
+    right: -150px;
+  }
+
+  .zen-ambient-light--bottom-left {
+    bottom: -150px;
+    left: -150px;
+  }
+
+  .zen-ambient-light--bottom-right {
+    bottom: -150px;
+    right: -150px;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     BORDES DECORATIVOS
+     ────────────────────────────────────────────────────────────── */
+  .zen-border-subtle {
+    border: 1px solid var(--zen-border);
+  }
+
+  .zen-border-glass {
+    border: 1px solid var(--zen-glass-border);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     EFECTOS DE TRANSICIÓN
+     ────────────────────────────────────────────────────────────── */
+  .zen-transition {
+    transition: all var(--zen-transition-normal);
+  }
+
+  .zen-transition-fast {
+    transition: all var(--zen-transition-fast);
+  }
+
+  .zen-transition-slow {
+    transition: all var(--zen-transition-slow);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     EFECTO FLOAT (LEVITACIÓN SUAVE)
+     ────────────────────────────────────────────────────────────── */
+  .zen-float {
+    transition: transform var(--zen-transition-normal), box-shadow var(--zen-transition-normal);
+  }
+
+  .zen-float:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--zen-shadow-float);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CONTAINERS
+     ────────────────────────────────────────────────────────────── */
+  .zen-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--zen-space-6);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     UTILIDADES DE OPACIDAD
+     ────────────────────────────────────────────────────────────── */
+  .zen-opacity-subtle {
+    opacity: var(--zen-opacity-subtle);
+  }
+
+  .zen-opacity-light {
+    opacity: var(--zen-opacity-light);
+  }
+
+  .zen-opacity-medium {
+    opacity: var(--zen-opacity-medium);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     UTILIDADES DE POSICIONAMIENTO ZEN
+     ────────────────────────────────────────────────────────────── */
+  .zen-relative {
+    position: relative;
+  }
+
+  .zen-absolute {
+    position: absolute;
+  }
+
+  .zen-fixed {
+    position: fixed;
+  }
+
+  .zen-sticky {
+    position: sticky;
+    top: 0;
+    z-index: var(--zen-z-sticky);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMACIONES ZEN GARDEN
+   Movimientos calmados y orgánicos
+   ═══════════════════════════════════════════════════════════════ */
+@layer utilities {
+  /* ──────────────────────────────────────────────────────────────
+     FADE IN SUAVE
+     ────────────────────────────────────────────────────────────── */
+  @keyframes zen-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .zen-animate-fade-in {
+    animation: zen-fade-in 0.6s ease-out forwards;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     FLOATING (LEVITACIÓN CONTINUA)
+     ────────────────────────────────────────────────────────────── */
+  @keyframes zen-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .zen-animate-float {
+    animation: zen-float 6s ease-in-out infinite;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     PULSE SUAVE (RESPIRACIÓN)
+     ────────────────────────────────────────────────────────────── */
+  @keyframes zen-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .zen-animate-pulse {
+    animation: zen-pulse 4s ease-in-out infinite;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     GLOW PULSE (LUZ QUE RESPIRA)
+     ────────────────────────────────────────────────────────────── */
+  @keyframes zen-glow-pulse {
+    0%, 100% {
+      opacity: 0.25;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(1.05);
+    }
+  }
+
+  .zen-animate-glow {
+    animation: zen-glow-pulse 8s ease-in-out infinite;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     SLIDE IN DESDE LADOS
+     ────────────────────────────────────────────────────────────── */
+  @keyframes zen-slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zen-slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .zen-animate-slide-left {
+    animation: zen-slide-left 0.8s ease-out forwards;
+  }
+
+  .zen-animate-slide-right {
+    animation: zen-slide-right 0.8s ease-out forwards;
   }
 }

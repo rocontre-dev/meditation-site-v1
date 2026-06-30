@@ -18,7 +18,7 @@ const About = () => {
       description: t('about.presenceDesc'),
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       ),
     },
@@ -45,62 +45,62 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre-mi" className="py-20 md:py-28 bg-[#F0EDE5]">
+    <section id="sobre-mi" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Image placeholder */}
           <div className="order-1 lg:order-1 relative">
-            <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-[#CDD7C9] to-[#B6C2AE] flex items-center justify-center overflow-hidden">
+            <div className="aspect-[4/5] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] flex items-center justify-center overflow-hidden shadow-[var(--zen-shadow-medium)]">
               <div className="text-center p-8">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[#9EAB9A] border-4 border-white shadow-sm flex items-center justify-center">
-                  <svg className="w-16 h-16 text-[#E8E3D7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[var(--zen-sage)]/30 border-4 border-[var(--zen-cream)] shadow-[var(--zen-shadow-soft)] flex items-center justify-center">
+                  <svg className="w-16 h-16 text-[var(--zen-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <p className="text-[#5A6B5C] text-sm font-medium mb-1">
+                <p className="text-[var(--zen-muted)] text-sm font-medium mb-1">
                   {t('about.photoPlaceholder')}
                 </p>
-                <p className="text-[#7D8C7A] text-xs italic">
+                <p className="text-[var(--zen-moss)] text-xs italic">
                   {t('about.photoPending')}
                 </p>
               </div>
             </div>
             {/* Decorative elements */}
-            <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full rounded-2xl bg-[#CDD7C9]" />
+            <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />
           </div>
 
           {/* Content */}
           <div className="order-2 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-light text-[#3E4B3F] mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('about.title')}
             </h2>
-            <p className="text-lg text-[#5A6B5C] leading-relaxed mb-6">
+            <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-8">
               {t('about.subtitle')}
             </p>
 
-            <div className="space-y-4 mb-8">
-              <p className="text-[#5A6B5C] leading-relaxed">
+            <div className="space-y-6 mb-10">
+              <p className="text-[var(--zen-muted)] leading-relaxed">
                 {t('about.paragraph1')}
               </p>
-              <p className="text-[#5A6B5C] leading-relaxed">
+              <p className="text-[var(--zen-muted)] leading-relaxed">
                 {t('about.paragraph2')}
               </p>
-              <p className="text-[#5A6B5C] leading-relaxed">
+              <p className="text-[var(--zen-muted)] leading-relaxed">
                 {t('about.paragraph3')}
               </p>
             </div>
 
             {/* Values */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               {values.map((value) => (
                 <div key={value.id} className="text-center md:text-left">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#CDD7C9] text-[#5F6B5C] mb-3">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[var(--zen-sand)] text-[var(--zen-moss)] mb-4">
                     {value.icon}
                   </div>
-                  <h3 className="text-lg font-medium text-[#3E4B3F] mb-1">
+                  <h3 className="text-lg font-medium text-[var(--zen-deep)] mb-2">
                     {value.title}
                   </h3>
-                  <p className="text-sm text-[#5A6B5C] leading-relaxed">
+                  <p className="text-sm text-[var(--zen-muted)] leading-relaxed">
                     {value.description}
                   </p>
                 </div>
@@ -112,6 +112,7 @@ const About = () => {
               <Button
                 variant="primary"
                 onClick={() => scrollToSection('reservas')}
+                className="px-8 py-3"
               >
                 {t('about.ctaButton')}
               </Button>

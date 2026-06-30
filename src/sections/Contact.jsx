@@ -33,32 +33,32 @@ const Contact = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 md:py-28 bg-[#F0EDE5]">
+    <section id="contacto" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-light text-[#3E4B3F] mb-4 tracking-tight">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('contact.title')}
             </h2>
-            <p className="text-lg text-[#5A6B5C] leading-relaxed">
+            <p className="text-lg text-[var(--zen-muted)] leading-relaxed">
               {t('contact.subtitle')}
             </p>
           </div>
 
           {/* Form */}
-          <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-[#CDD7C9]">
+          <div className="bg-[var(--zen-cream)] rounded-[var(--zen-radius-2xl)] p-10 md:p-12 border border-[var(--zen-border)] shadow-[var(--zen-shadow-medium)]">
             {submitted ? (
               <div className="text-center py-12">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#CDD7C9] flex items-center justify-center">
-                  <svg className="w-8 h-8 text-[#5F6B5C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[var(--zen-sand)] flex items-center justify-center">
+                  <svg className="w-10 h-10 text-[var(--zen-moss)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-medium text-[#3E4B3F] mb-2">
+                <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-3">
                   {t('contact.success')}
                 </h3>
-                <p className="text-[#5A6B5C]">
+                <p className="text-[var(--zen-muted)]">
                   {t('contact.successMessage')}
                 </p>
               </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 <div>
                   <label 
                     htmlFor="name" 
-                    className="block text-sm font-medium text-[#3E4B3F] mb-2"
+                    className="block text-sm font-medium text-[var(--zen-deep)] mb-2"
                   >
                     {t('contact.name')}
                   </label>
@@ -79,7 +79,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-[var(--zen-radius-lg)] border border-[var(--zen-border)] bg-[var(--zen-soft)] focus:border-[var(--zen-moss)] focus:ring-2 focus:ring-[var(--zen-moss)]/20 outline-none zen-transition"
                     placeholder={t('contact.name')}
                   />
                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                 <div>
                   <label 
                     htmlFor="email" 
-                    className="block text-sm font-medium text-[#3E4B3F] mb-2"
+                    className="block text-sm font-medium text-[var(--zen-deep)] mb-2"
                   >
                     {t('contact.emailLabel')}
                   </label>
@@ -99,7 +99,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-[var(--zen-radius-lg)] border border-[var(--zen-border)] bg-[var(--zen-soft)] focus:border-[var(--zen-moss)] focus:ring-2 focus:ring-[var(--zen-moss)]/20 outline-none zen-transition"
                     placeholder={t('contact.emailPlaceholder')}
                   />
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                 <div>
                   <label 
                     htmlFor="service" 
-                    className="block text-sm font-medium text-[#3E4B3F] mb-2"
+                    className="block text-sm font-medium text-[var(--zen-deep)] mb-2"
                   >
                     {t('contact.serviceLabel')}
                   </label>
@@ -117,7 +117,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all bg-white"
+                    className="w-full px-4 py-3 rounded-[var(--zen-radius-lg)] border border-[var(--zen-border)] bg-[var(--zen-soft)] focus:border-[var(--zen-moss)] focus:ring-2 focus:ring-[var(--zen-moss)]/20 outline-none zen-transition"
                   >
                     <option value="">{t('contact.servicePlaceholder')}</option>
                     <option value="curso">{t('onlineCourse.title')}</option>
@@ -133,7 +133,7 @@ const Contact = () => {
                 <div>
                   <label 
                     htmlFor="message" 
-                    className="block text-sm font-medium text-[#3E4B3F] mb-2"
+                    className="block text-sm font-medium text-[var(--zen-deep)] mb-2"
                   >
                     {t('contact.message')}
                   </label>
@@ -144,13 +144,17 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-[#CDD7C9] focus:border-[#7D8C7A] focus:ring-2 focus:ring-[#CDD7C9] outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-[var(--zen-radius-lg)] border border-[var(--zen-border)] bg-[var(--zen-soft)] focus:border-[var(--zen-moss)] focus:ring-2 focus:ring-[var(--zen-moss)]/20 outline-none zen-transition resize-none"
                     placeholder={t('contact.message')}
                   />
                 </div>
 
                 {/* Submit button */}
-                <Button type="submit" variant="primary" className="w-full">
+                <Button 
+                  type="submit" 
+                  variant="primary" 
+                  className="w-full px-10 py-4"
+                >
                   {t('contact.send')}
                 </Button>
               </form>

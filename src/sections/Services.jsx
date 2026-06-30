@@ -71,36 +71,38 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicios" className="py-20 md:py-28 bg-[#E8E3D7]">
+    <section id="servicios" className="zen-section py-24 md:py-32 bg-[var(--zen-sand)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-[#3E4B3F] mb-4 tracking-tight">
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
             {t('services.title')}
           </h2>
-          <p className="text-lg text-[#5A6B5C] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
             {t('services.subtitle')}
           </p>
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.id} className="flex flex-col h-full">
-              <div className="text-[#7D8C7A] mb-4">
-                {service.icon}
+            <Card key={service.id} className="flex flex-col h-full zen-float">
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[var(--zen-sand)] mb-6">
+                <div className="text-[var(--zen-moss)]">
+                  {service.icon}
+                </div>
               </div>
-              <h3 className="text-xl font-medium text-[#3E4B3F] mb-3">
+              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4">
                 {service.title}
               </h3>
-              <p className="text-[#5A6B5C] leading-relaxed flex-grow">
+              <p className="text-[var(--zen-muted)] leading-relaxed flex-grow">
                 {service.description}
               </p>
               <div className="mt-6">
                 <Button 
                   variant="secondary" 
                   onClick={() => scrollToSection(service.link)}
-                  className="w-full px-4 py-2 text-sm"
+                  className="w-full px-4 py-2.5 text-sm"
                 >
                   {t('retreats.learnMore')}
                 </Button>
