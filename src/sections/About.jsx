@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
+import fabrizioPortrait from '../assets/images/about/fabrizio-portrait.png';
 
 const About = () => {
   const { t } = useTranslation();
@@ -48,22 +49,14 @@ const About = () => {
     <section id="sobre-mi" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-          {/* Image placeholder */}
+          {/* Image */}
           <div className="order-1 lg:order-1 relative">
-            <div className="aspect-[4/5] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] flex items-center justify-center overflow-hidden shadow-[var(--zen-shadow-medium)]">
-              <div className="text-center p-8">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[var(--zen-sage)]/30 border-4 border-[var(--zen-cream)] shadow-[var(--zen-shadow-soft)] flex items-center justify-center">
-                  <svg className="w-16 h-16 text-[var(--zen-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <p className="text-[var(--zen-muted)] text-sm font-medium mb-1">
-                  {t('about.photoPlaceholder')}
-                </p>
-                <p className="text-[var(--zen-moss)] text-xs italic">
-                  {t('about.photoPending')}
-                </p>
-              </div>
+            <div className="aspect-[4/5] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+              <img
+                src={fabrizioPortrait}
+                alt={t('about.photoAlt')}
+                className="w-full h-full object-cover object-center"
+              />
             </div>
             {/* Decorative elements */}
             <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />

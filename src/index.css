@@ -251,6 +251,23 @@
   }
 
   /* ──────────────────────────────────────────────────────────────
+     HERO BACKGROUND WITH FOREST IMAGE
+     Full viewport background with subtle dark overlay for text readability
+     ────────────────────────────────────────────────────────────── */
+  .zen-hero-background {
+    min-height: 100vh;
+    background-image:
+      linear-gradient(
+        rgba(24, 35, 27, 0.38),
+        rgba(24, 35, 27, 0.5)
+      ),
+      url('./assets/images/hero/forest-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
      CONTENEDOR DE SECCIÓN
      Overflow hidden para elementos decorativos internos
      ────────────────────────────────────────────────────────────── */
