@@ -54,7 +54,8 @@
     "module2Desc": "Techniques and exercises to develop your practice.",
     "module3": "Module 3: Deepening",
     "module3Desc": "Bringing meditation into your daily life.",
-    "enroll": "Enroll Now"
+    "enroll": "Enroll Now",
+    "imageAlt": "Light in nature representing clarity, awareness and guided meditation"
   },
   "community": {
     "title": "Our Community",
@@ -129,9 +130,9 @@
     "podcastNote": "You'll soon be able to listen to the first podcast episodes here.",
     "podcastSectionTitle": "Podcast",
     "podcastSectionSubtitle": "Reflections to listen to in stillness.",
-    "podcastEpisode1Title": "Existir, la tragicomedia",
+    "podcastEpisode1Title": "To Exist, the Tragicomedy",
     "podcastEpisode1Desc": "A space for reflecting on existence, everyday life and the questions that accompany us.",
-    "podcastEpisode2Title": "Ikigai BIENESTAR INTERIOR",
+    "podcastEpisode2Title": "Ikigai Inner Wellbeing",
     "podcastEpisode2Desc": "Reflections and practices for cultivating inner wellbeing, presence and purpose in everyday life.",
     "podcastSpotifyButton": "Listen on Spotify"
   },
@@ -172,5 +173,23 @@
     "navigation": "Navigation",
     "contact": "Contact",
     "disclaimer": "This site offers educational and personal growth support. The services presented here do not replace professional medical or psychological care."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "We're sorry, the page you're looking for doesn't exist. It may have been moved or deleted.",
+    "backHome": "Back to Home"
+  },
+  "home": {
+    "aboutEyebrow": "Guide and Companionship",
+    "aboutCta": "Discover my journey",
+    "servicesCta": "Explore all services",
+    "retreatsCta": "View retreats and experiences",
+    "resourcesCta": "Explore resources",
+    "bookingHeading": "Take the next step in your practice",
+    "bookingSubtitle": "Schedule a session, consultation, or activity and take the next step in your inner journey.",
+    "bookingCta": "Book a session",
+    "contactHeading": "Let's talk",
+    "contactSubtitle": "Have questions? We're here to help you on your path.",
+    "contactCta": "Get in touch"
   }
 }

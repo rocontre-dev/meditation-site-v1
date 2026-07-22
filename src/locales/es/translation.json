@@ -54,7 +54,8 @@
     "module2Desc": "Técnicas y ejercicios para desarrollar tu práctica.",
     "module3": "Módulo 3: Profundización",
     "module3Desc": "Llevar la meditación a tu vida diaria.",
-    "enroll": "Inscribirse ahora"
+    "enroll": "Inscribirse ahora",
+    "imageAlt": "Luz en la naturaleza que representa claridad, consciencia y meditación guiada"
   },
   "community": {
     "title": "Nuestra Comunidad",
@@ -172,5 +173,23 @@
     "navigation": "Navegación",
     "contact": "Contacto",
     "disclaimer": "Este sitio ofrece acompañamiento educativo y de crecimiento personal. Los servicios presentados aquí no sustituyen la atención médica o psicológica profesional."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "Lo sentimos, la página que buscas no existe. Es posible que se haya movido o eliminado.",
+    "backHome": "Volver al inicio"
+  },
+  "home": {
+    "aboutEyebrow": "Guía y acompañamiento",
+    "aboutCta": "Conoce mi camino",
+    "servicesCta": "Explorar todos los servicios",
+    "retreatsCta": "Ver retiros y experiencias",
+    "resourcesCta": "Descubrir recursos",
+    "bookingHeading": "Da el siguiente paso en tu práctica",
+    "bookingSubtitle": "Reserva una sesión, consulta o actividad y da el siguiente paso en tu proceso de acompañamiento interior.",
+    "bookingCta": "Reservar una sesión",
+    "contactHeading": "Hablemos",
+    "contactSubtitle": "¿Tienes preguntas? Estamos aquí para ayudarte en tu camino.",
+    "contactCta": "Contactar"
   }
 }

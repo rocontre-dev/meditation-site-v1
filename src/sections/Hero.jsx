@@ -1,16 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import PodcastPromoFloating from '../components/PodcastPromoFloating';
 
 const Hero = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const navigate = useNavigate();
 
   return (
     <section id="inicio" className="zen-hero-background zen-section relative min-h-screen flex items-center justify-center pt-24 md:pt-28 overflow-hidden">
@@ -42,14 +37,14 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <Button 
             variant="primary" 
-            onClick={() => scrollToSection('reservas')}
+            onClick={() => navigate('/bookings')}
             className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnSession')}
           </Button>
           <Button 
             variant="secondary" 
-            onClick={() => scrollToSection('recursos')}
+            onClick={() => navigate('/resources')}
             className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnResources')}

@@ -1,37 +1,27 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Hero from './sections/Hero'
-import FeaturedPodcast from './sections/FeaturedPodcast'
-import About from './sections/About'
-import Services from './sections/Services'
-import OnlineCourse from './sections/OnlineCourse'
-import Community from './sections/Community'
-import Retreats from './sections/Retreats'
-import Reprogramming from './sections/Reprogramming'
-import Resources from './sections/Resources'
-import Bookings from './sections/Bookings'
-import Contact from './sections/Contact'
+import { Routes, Route } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ServicesPage from './pages/ServicesPage'
+import ResourcesPage from './pages/ResourcesPage'
+import BookingsPage from './pages/BookingsPage'
+import ContactPage from './pages/ContactPage'
+import NotFoundPage from './pages/NotFoundPage'
 import './App.css'
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <FeaturedPodcast />
-        <About />
-        <Services />
-        <OnlineCourse />
-        <Community />
-        <Retreats />
-        <Reprogramming />
-        <Resources />
-        <Bookings />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="services" element={<ServicesPage />} />
+        <Route path="resources" element={<ResourcesPage />} />
+        <Route path="bookings" element={<BookingsPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   )
 }
 

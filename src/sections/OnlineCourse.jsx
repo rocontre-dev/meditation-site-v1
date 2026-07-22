@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
+import meditationLight from '../assets/images/meditation/meditation-light.png';
 
 const OnlineCourse = () => {
   const { t } = useTranslation();
@@ -74,20 +75,16 @@ const OnlineCourse = () => {
             </Button>
           </div>
 
-          {/* Image placeholder */}
+          {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] flex items-center justify-center overflow-hidden shadow-[var(--zen-shadow-medium)]">
-              <div className="text-center p-8">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-[var(--zen-sage)]/20 flex items-center justify-center">
-                  <svg className="w-12 h-12 text-[var(--zen-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <p className="text-[var(--zen-muted)] text-sm">
-                  {t('onlineCourse.title')}
-                </p>
-              </div>
+            <div className="aspect-[4/3] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+              <img
+                src={meditationLight}
+                alt={t('onlineCourse.imageAlt')}
+                className="w-full h-full object-cover object-center"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             {/* Decorative elements */}
             <div className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />
