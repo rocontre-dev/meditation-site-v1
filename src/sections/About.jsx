@@ -1,16 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
-import fabrizioPortrait from '../assets/images/about/fabrizio-portrait.png';
+import fabrizioPortrait from '../assets/images/about/fabrizio-portrait.webp';
 
 const About = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const navigate = useNavigate();
 
   const values = [
     {
@@ -104,7 +99,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="primary"
-                onClick={() => scrollToSection('reservas')}
+          onClick={() => navigate('/contact')}
                 className="px-8 py-3"
               >
                 {t('about.ctaButton')}

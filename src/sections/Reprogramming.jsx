@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 
 const Reprogramming = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const steps = [
     {
@@ -97,10 +99,7 @@ const Reprogramming = () => {
         <div className="mt-12 text-center">
           <Button 
             variant="primary" 
-            onClick={() => {
-              const reservas = document.getElementById('reservas');
-              if (reservas) reservas.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={() => navigate('/contact')}
             className="px-10 py-4"
           >
             {t('reprogramming.start')}

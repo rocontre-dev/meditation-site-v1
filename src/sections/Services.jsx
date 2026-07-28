@@ -1,16 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Card from '../components/Card';
 import Button from '../components/Button';
 
 const Services = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -22,7 +17,7 @@ const Services = () => {
       ),
       title: t('services.courseTitle'),
       description: t('services.courseDesc'),
-      link: 'servicios'
+      link: '/services'
     },
     {
       id: 'acompanamiento',
@@ -33,7 +28,7 @@ const Services = () => {
       ),
       title: t('services.coachingTitle'),
       description: t('services.coachingDesc'),
-      link: 'contacto'
+      link: '/contact'
     },
     {
       id: 'comunidad',
@@ -44,7 +39,7 @@ const Services = () => {
       ),
       title: t('community.title'),
       description: t('community.subtitle'),
-      link: 'comunidad'
+      link: '/services'
     },
     {
       id: 'retiros',
@@ -55,7 +50,7 @@ const Services = () => {
       ),
       title: t('services.retreatTitle'),
       description: t('services.retreatDesc'),
-      link: 'retiros'
+      link: '/services'
     },
     {
       id: 'reprogramacion',
@@ -66,7 +61,7 @@ const Services = () => {
       ),
       title: t('reprogramming.title'),
       description: t('reprogramming.subtitle'),
-      link: 'reprogramacion'
+      link: '/services'
     }
   ];
 
@@ -101,7 +96,7 @@ const Services = () => {
               <div className="mt-6">
                 <Button 
                   variant="secondary" 
-                  onClick={() => scrollToSection(service.link)}
+                  onClick={() => navigate(service.link)}
                   className="w-full px-4 py-2.5 text-sm"
                 >
                   {t('retreats.learnMore')}

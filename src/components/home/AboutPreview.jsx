@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import fabrizioPortrait from '../../assets/images/about/fabrizio-portrait.png';
+import fabrizioPortrait from '../../assets/images/about/fabrizio-portrait.webp';
 
 /**
  * About preview for Home page.
@@ -44,7 +44,7 @@ const AboutPreview = () => {
             <Button
               variant="primary"
               as={Link}
-              to="/about"
+              to="/fabrizio"
               className="px-8 py-3"
             >
               {t('home.aboutCta')}

@@ -75,7 +75,7 @@ const ServicesPreview = () => {
           <Button
             variant="secondary"
             as={Link}
-            to="/services"
+            to="/meditation"
             className="px-8 py-3"
           >
             {t('home.servicesCta')}

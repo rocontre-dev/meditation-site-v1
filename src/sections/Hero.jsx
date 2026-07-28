@@ -37,14 +37,14 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <Button 
             variant="primary" 
-            onClick={() => navigate('/bookings')}
+            onClick={() => navigate('/contact')}
             className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnSession')}
           </Button>
           <Button 
             variant="secondary" 
-            onClick={() => navigate('/resources')}
+            onClick={() => navigate('/podcast')}
             className="w-full sm:w-auto min-w-[200px] px-8 py-4"
           >
             {t('hero.btnResources')}

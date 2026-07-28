@@ -1,16 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Card from '../components/Card';
 import Button from '../components/Button';
 
 const Bookings = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const navigate = useNavigate();
 
   const bookings = [
     {
@@ -22,7 +17,7 @@ const Bookings = () => {
       ),
       title: t('bookings.consultaTitle'),
       description: t('bookings.consultaDesc'),
-      action: () => scrollToSection('contacto'),
+      action: () => navigate('/contact'),
       buttonText: t('bookings.consultaButton'),
     },
     {
@@ -34,7 +29,7 @@ const Bookings = () => {
       ),
       title: t('bookings.sesionTitle'),
       description: t('bookings.sesionDesc'),
-      action: () => scrollToSection('contacto'),
+      action: () => navigate('/contact'),
       buttonText: t('bookings.sesionButton'),
     },
     {
@@ -46,7 +41,7 @@ const Bookings = () => {
       ),
       title: t('bookings.actividadesTitle'),
       description: t('bookings.actividadesDesc'),
-      action: () => scrollToSection('contacto'),
+      action: () => navigate('/contact'),
       buttonText: t('bookings.actividadesButton'),
     },
   ];

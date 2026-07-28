@@ -10,10 +10,11 @@ const Header = () => {
 
   const navItems = [
     { label: t('header.home'), to: '/' },
-    { label: t('header.about'), to: '/about' },
-    { label: t('header.services'), to: '/services' },
-    { label: t('header.resources'), to: '/resources' },
-    { label: t('header.bookings'), to: '/bookings' },
+    { label: t('header.theVoid'), to: '/the-void' },
+    { label: t('header.meditation'), to: '/meditation' },
+    { label: t('header.retreats'), to: '/retreats' },
+    { label: t('header.podcast'), to: '/podcast' },
+    { label: t('header.fabrizio'), to: '/fabrizio' },
   ];
 
   // Active link styling - subtle underline and color change

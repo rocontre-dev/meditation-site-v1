@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from './Button';
 
@@ -6,25 +6,22 @@ const PodcastPromoFloating = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isDismissed, setIsDismissed] = useState(false);
   const [isPulsing, setIsPulsing] = useState(false);
-  const dismissTimeoutRef = useRef(null);
+  // Initialize isDismissed from sessionStorage to avoid setState in effect
+  const [isDismissed, setIsDismissed] = useState(() => {
+    return sessionStorage.getItem('podcastPromoDismissed') === 'true';
+  });
 
   useEffect(() => {
-    // Check if dismissed in this session
-    const dismissed = sessionStorage.getItem('podcastPromoDismissed');
-    if (dismissed === 'true') {
-      setIsDismissed(true);
-      return;
-    }
+    // Only show after 2 seconds if not already dismissed
+    if (isDismissed) return;
 
-    // Show after 2 seconds
     const showTimer = setTimeout(() => {
       setIsVisible(true);
     }, 2000);
 
     return () => clearTimeout(showTimer);
-  }, []);
+  }, [isDismissed]);
 
   useEffect(() => {
     // Pulse animation every 7 seconds when collapsed

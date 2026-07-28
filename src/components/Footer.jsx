@@ -1,14 +1,8 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <footer className="bg-[var(--zen-deep)] text-[var(--zen-sand)]">
@@ -29,44 +23,52 @@ const Footer = () => {
             <h4 className="text-[var(--zen-sand)] font-medium mb-4">{t('footer.navigation')}</h4>
             <ul className="space-y-3">
               <li>
-                <button 
-                  onClick={() => scrollToSection('inicio')}
+                <Link 
+                  to="/"
                   className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
                 >
                   {t('header.home')}
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('sobre-mi')}
+                <Link 
+                  to="/the-void"
                   className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
                 >
-                  {t('header.about')}
-                </button>
+                  {t('header.theVoid')}
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('servicios')}
+                <Link 
+                  to="/meditation"
                   className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
                 >
-                  {t('header.services')}
-                </button>
+                  {t('header.meditation')}
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('recursos')}
+                <Link 
+                  to="/retreats"
                   className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
                 >
-                  {t('header.resources')}
-                </button>
+                  {t('header.retreats')}
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('reservas')}
+                <Link 
+                  to="/podcast"
                   className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
                 >
-                  {t('header.bookings')}
-                </button>
+                  {t('header.podcast')}
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/fabrizio"
+                  className="text-[var(--zen-sage)] hover:text-[var(--zen-sand)] zen-transition"
+                >
+                  {t('header.fabrizio')}
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,12 +78,12 @@ const Footer = () => {
             <h4 className="text-[var(--zen-sand)] font-medium mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-3 text-[var(--zen-sage)]">
               <li>
-                <button 
-                  onClick={() => scrollToSection('contacto')}
+                <Link 
+                  to="/contact"
                   className="hover:text-[var(--zen-sand)] zen-transition"
                 >
                   {t('header.contact')}
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

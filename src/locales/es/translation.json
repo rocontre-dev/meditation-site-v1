@@ -2,11 +2,16 @@
   "header": {
     "logo": "Espacio Interior",
     "home": "Inicio",
+    "theVoid": "The Void",
+    "meditation": "Meditación",
+    "retreats": "Retiros",
+    "podcast": "Podcast",
+    "fabrizio": "Fabrizio",
+    "contact": "Contacto",
     "about": "Sobre mí",
     "services": "Servicios",
     "resources": "Recursos",
-    "bookings": "Reservas",
-    "contact": "Contacto"
+    "bookings": "Reservas"
   },
   "hero": {
     "title": "Encuentra tu espacio",
@@ -178,6 +183,52 @@
     "title": "Página no encontrada",
     "subtitle": "Lo sentimos, la página que buscas no existe. Es posible que se haya movido o eliminado.",
     "backHome": "Volver al inicio"
+  },
+  "theVoid": {
+    "hero": {
+      "eyebrow": "Espacio Interior",
+      "title": "The Void",
+      "lead": "Hay momentos en los que avanzar comienza por detenerse.",
+      "intro": "The Void es el espacio que aparece cuando dejamos de llenar cada silencio, sostener cada certeza y repetir cada historia.",
+      "cta": "Entrar en el silencio"
+    },
+    "intro": {
+      "title": "El espacio entre historias",
+      "paragraph1": "Gran parte de nuestra vida está construida alrededor de relatos: quiénes somos, qué debemos hacer, qué esperamos de los demás y qué creemos que puede suceder.",
+      "paragraph2": "Cuando esas historias se detienen por un momento, aparece un espacio que no necesita ser explicado de inmediato.",
+      "paragraph3": "Ese espacio es The Void."
+    },
+    "principles": {
+      "title": "Lo que aparece cuando dejamos de llenar el silencio",
+      "pause": {
+        "title": "Pausa",
+        "text": "Un momento para dejar de reaccionar automáticamente."
+      },
+      "observation": {
+        "title": "Observación",
+        "text": "La posibilidad de mirar pensamientos, emociones y patrones sin convertirlos inmediatamente en una identidad."
+      },
+      "disidentification": {
+        "title": "Desidentificación",
+        "text": "Reconocer que una historia puede estar presente sin definir por completo quién eres."
+      },
+      "presence": {
+        "title": "Presencia",
+        "text": "Volver a lo que está ocurriendo ahora, antes de interpretarlo."
+      }
+    },
+    "notAbsence": {
+      "title": "El vacío no es ausencia",
+      "paragraph1": "No se trata de eliminar pensamientos, negar emociones ni escapar de la historia personal.",
+      "paragraph2": "Se trata de crear suficiente espacio interior para que una respuesta distinta pueda aparecer.",
+      "paragraph3": "En ese intervalo entre lo conocido y lo que todavía no tiene nombre, puede comenzar una forma diferente de relacionarnos con nosotros mismos."
+    },
+    "closing": {
+      "title": "Permanecer un momento",
+      "paragraph1": "No todo espacio necesita llenarse.",
+      "paragraph2": "A veces basta con permanecer, respirar y escuchar lo que surge cuando dejamos de buscar una respuesta inmediata.",
+      "cta": "Explorar la meditación"
+    }
   },
   "home": {
     "aboutEyebrow": "Guía y acompañamiento",

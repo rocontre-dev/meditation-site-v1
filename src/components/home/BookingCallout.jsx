@@ -21,7 +21,7 @@ const BookingCallout = () => {
         <Button
           variant="accent"
           as={Link}
-          to="/bookings"
+          to="/contact"
           className="px-10 py-4"
         >
           {t('home.bookingCta')}

@@ -72,7 +72,7 @@ const RetreatsPreview = () => {
           <Button
             variant="secondary"
             as={Link}
-            to="/services"
+            to="/retreats"
             className="px-8 py-3"
           >
             {t('home.retreatsCta')}

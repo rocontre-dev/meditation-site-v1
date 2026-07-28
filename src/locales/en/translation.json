@@ -2,11 +2,16 @@
   "header": {
     "logo": "Inner Space",
     "home": "Home",
+    "theVoid": "The Void",
+    "meditation": "Meditation",
+    "retreats": "Retreats",
+    "podcast": "Podcast",
+    "fabrizio": "Fabrizio",
+    "contact": "Contact",
     "about": "About",
     "services": "Services",
     "resources": "Resources",
-    "bookings": "Bookings",
-    "contact": "Contact"
+    "bookings": "Bookings"
   },
   "hero": {
     "title": "Find your inner",
@@ -178,6 +183,52 @@
     "title": "Page Not Found",
     "subtitle": "We're sorry, the page you're looking for doesn't exist. It may have been moved or deleted.",
     "backHome": "Back to Home"
+  },
+  "theVoid": {
+    "hero": {
+      "eyebrow": "Inner Space",
+      "title": "The Void",
+      "lead": "There are moments when moving forward begins by stopping.",
+      "intro": "The Void is the space that appears when we stop filling every silence, holding every certainty, and repeating every story.",
+      "cta": "Enter the silence"
+    },
+    "intro": {
+      "title": "The space between stories",
+      "paragraph1": "Much of our life is built around narratives: who we are, what we should do, what we expect from others, and what we believe may happen.",
+      "paragraph2": "When those stories pause for a moment, a space appears that doesn't need to be immediately explained.",
+      "paragraph3": "That space is The Void."
+    },
+    "principles": {
+      "title": "What appears when we stop filling the silence",
+      "pause": {
+        "title": "Pause",
+        "text": "A moment to stop reacting automatically."
+      },
+      "observation": {
+        "title": "Observation",
+        "text": "The possibility of looking at thoughts, emotions, and patterns without immediately turning them into an identity."
+      },
+      "disidentification": {
+        "title": "Disidentification",
+        "text": "Recognizing that a story can be present without completely defining who you are."
+      },
+      "presence": {
+        "title": "Presence",
+        "text": "Returning to what is happening now, before interpreting it."
+      }
+    },
+    "notAbsence": {
+      "title": "The void is not absence",
+      "paragraph1": "It's not about eliminating thoughts, denying emotions, or escaping one's personal history.",
+      "paragraph2": "It's about creating enough inner space for a different response to emerge.",
+      "paragraph3": "In that interval between the known and what still has no name, a different way of relating to ourselves can begin."
+    },
+    "closing": {
+      "title": "Stay a moment",
+      "paragraph1": "Not every space needs to be filled.",
+      "paragraph2": "Sometimes it's enough to remain, breathe, and listen to what arises when we stop searching for an immediate answer.",
+      "cta": "Explore meditation"
+    }
   },
   "home": {
     "aboutEyebrow": "Guide and Companionship",

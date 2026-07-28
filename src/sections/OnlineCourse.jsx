@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
-import meditationLight from '../assets/images/meditation/meditation-light.png';
+import meditationLight from '../assets/images/meditation/meditation-light.webp';
 
 const OnlineCourse = () => {
   const { t } = useTranslation();

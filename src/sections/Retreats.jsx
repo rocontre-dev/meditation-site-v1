@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
 
 const Retreats = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const retreats = [
     {
@@ -80,10 +82,7 @@ const Retreats = () => {
           <p className="text-[var(--zen-moss)] text-sm">
             {t('contact.subtitle')}{' '}
             <button 
-              onClick={() => {
-                const contact = document.getElementById('contacto');
-                if (contact) contact.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={() => navigate('/contact')}
               className="text-[var(--zen-muted)] hover:text-[var(--zen-deep)] underline underline-offset-4 transition-colors"
             >
               {t('header.contact')}

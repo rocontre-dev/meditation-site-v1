@@ -74,7 +74,7 @@ const ResourcesPreview = () => {
           <Button
             variant="secondary"
             as={Link}
-            to="/resources"
+            to="/podcast"
             className="px-8 py-3"
           >
             {t('home.resourcesCta')}

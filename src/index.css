@@ -261,7 +261,7 @@
         rgba(24, 35, 27, 0.38),
         rgba(24, 35, 27, 0.5)
       ),
-      url('./assets/images/hero/forest-hero.png');
+      url('./assets/images/hero/forest-hero.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
