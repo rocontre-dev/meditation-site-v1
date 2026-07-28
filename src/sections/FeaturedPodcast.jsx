@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import { podcastEpisodes } from '../data/podcasts';
+import podcastStudio from '../assets/images/podcast/podcast-studio.webp';
 
 const FeaturedPodcast = () => {
   const { t } = useTranslation();
@@ -23,6 +24,16 @@ const FeaturedPodcast = () => {
           <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
             {t('featuredPodcast.subtitle')}
           </p>
+        </div>
+
+        {/* Studio image */}
+        <div className="max-w-4xl mx-auto mb-16 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+          <img
+            src={podcastStudio}
+            alt=""
+            className="w-full h-56 md:h-72 object-cover object-center"
+            loading="lazy"
+          />
         </div>
 
         {/* Podcast Cards */}

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import { podcastEpisodes } from '../data/podcasts';
+import resourcesLibrary from '../assets/images/resources/resources-library.webp';
 
 const Resources = () => {
   const { t } = useTranslation();
@@ -56,6 +57,16 @@ const Resources = () => {
           <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
             {t('resources.subtitle')}
           </p>
+        </div>
+
+        {/* Library image */}
+        <div className="max-w-4xl mx-auto mb-16 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+          <img
+            src={resourcesLibrary}
+            alt=""
+            className="w-full h-64 md:h-80 object-cover object-center"
+            loading="lazy"
+          />
         </div>
 
         {/* Featured Reflection */}

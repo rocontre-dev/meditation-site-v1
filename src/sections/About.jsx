@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import fabrizioPortrait from '../assets/images/about/fabrizio-portrait.webp';
+import aboutContemplation from '../assets/images/about/about-contemplation.webp';
 
 const About = () => {
   const { t } = useTranslation();
@@ -51,10 +52,20 @@ const About = () => {
                 src={fabrizioPortrait}
                 alt={t('about.photoAlt')}
                 className="w-full h-full object-cover object-center"
+                loading="eager"
               />
             </div>
             {/* Decorative elements */}
             <div className="absolute -z-10 -bottom-4 -left-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />
+            {/* Editorial contemplation image - subtle secondary visual */}
+            <div className="mt-6 aspect-[16/9] rounded-[var(--zen-radius-xl)] overflow-hidden shadow-[var(--zen-shadow-soft)]">
+              <img
+                src={aboutContemplation}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
 
           {/* Content */}

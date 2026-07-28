@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import retreatLandscape from '../assets/images/retreats/retreat-landscape.webp';
 
 const Retreats = () => {
   const { t } = useTranslation();
@@ -75,6 +76,16 @@ const Retreats = () => {
               </Button>
             </Card>
           ))}
+        </div>
+
+        {/* Editorial landscape image */}
+        <div className="mt-16 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+          <img
+            src={retreatLandscape}
+            alt=""
+            className="w-full h-72 md:h-96 object-cover object-center"
+            loading="lazy"
+          />
         </div>
 
         {/* Additional info */}

@@ -373,7 +373,8 @@
 
   /* ──────────────────────────────────────────────────────────────
      HERO BACKGROUND WITH FOREST IMAGE
-     Full viewport background with subtle dark overlay for text readability
+     Full viewport background with subtle dark overlay for text readability.
+     Background-position adjusted per breakpoint to keep seated figure visible.
      ────────────────────────────────────────────────────────────── */
   .zen-hero-background {
     min-height: 100vh;
@@ -382,10 +383,22 @@
         rgba(24, 35, 27, 0.38),
         rgba(24, 35, 27, 0.5)
       ),
-      url('./assets/images/hero/forest-hero.webp');
+      url('./assets/images/hero/hero-main.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 640px) {
+    .zen-hero-background {
+      background-position: center 30%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .zen-hero-background {
+      background-position: center;
+    }
   }
 
   /* ──────────────────────────────────────────────────────────────

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
-import meditationLight from '../assets/images/meditation/meditation-light.webp';
+import meditationPractice from '../assets/images/meditation/meditation-practice.webp';
 
 const OnlineCourse = () => {
   const { t } = useTranslation();
@@ -79,7 +79,7 @@ const OnlineCourse = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
               <img
-                src={meditationLight}
+                src={meditationPractice}
                 alt={t('onlineCourse.imageAlt')}
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
