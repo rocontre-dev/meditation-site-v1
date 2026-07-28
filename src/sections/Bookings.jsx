@@ -47,7 +47,7 @@ const Bookings = () => {
   ];
 
   return (
-    <section id="reservas" className="zen-section py-24 md:py-32 bg-[var(--zen-cream)]">
+    <section id="reservas" className="zen-section py-24 md:py-32 bg-[var(--zen-cream)] zen-paper-texture">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-20">

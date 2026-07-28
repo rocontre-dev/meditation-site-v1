@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import ensoPrimary from '../assets/images/shared/enso-primary.webp';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -10,9 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-light text-[var(--zen-sand)] mb-4 tracking-wide">
-              {t('header.logo')}
-            </h3>
+            <div className="flex items-center gap-4 mb-4">
+              <img src={ensoPrimary} alt="" className="w-8 h-8 object-contain" />
+              <h3 className="text-2xl font-light text-[var(--zen-sand)] tracking-wide">
+                {t('header.logo')}
+              </h3>
+            </div>
             <p className="text-[var(--zen-sage)] text-sm leading-relaxed max-w-md">
               {t('hero.subtitle')}
             </p>

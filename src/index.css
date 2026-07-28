@@ -113,6 +113,7 @@
   body {
     margin: 0;
     font-family: var(--font-body);
+    background-color: var(--color-paper);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--color-text-primary);
@@ -622,6 +623,31 @@
 
   .zen-opacity-medium {
     opacity: var(--zen-opacity-medium);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     PAPEL TEXTURA — IDENTIDAD EDITORIAL
+     Textura sutil de papel para secciones editoriales (3% opacidad)
+     ────────────────────────────────────────────────────────────── */
+  .zen-paper-texture {
+    position: relative;
+  }
+
+  .zen-paper-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/images/backgrounds/paper-texture.webp');
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .zen-paper-texture > * {
+    position: relative;
+    z-index: 1;
   }
 
   /* ──────────────────────────────────────────────────────────────

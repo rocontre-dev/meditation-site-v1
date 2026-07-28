@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
 import LanguageSwitcher from './LanguageSwitcher';
+import ensoPrimary from '../assets/images/shared/enso-primary.webp';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -29,10 +30,17 @@ const Header = () => {
           <div className="flex-shrink-0">
             <NavLink 
               to="/" 
-              className="text-xl md:text-2xl font-light text-[var(--zen-deep)] tracking-wide hover:text-[var(--zen-moss)] transition-colors"
+              className="flex items-center gap-4 hover:text-[var(--zen-moss)] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {t('header.logo')}
+              <img 
+                src={ensoPrimary} 
+                alt="" 
+                className="w-[28px] h-[28px] object-contain"
+              />
+              <span className="text-xl md:text-2xl font-light text-[var(--zen-deep)] tracking-wide">
+                {t('header.logo')}
+              </span>
             </NavLink>
           </div>
 

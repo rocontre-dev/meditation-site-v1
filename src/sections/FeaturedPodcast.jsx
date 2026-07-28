@@ -14,7 +14,7 @@ const FeaturedPodcast = () => {
   }));
 
   return (
-    <section className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
+    <section className="zen-section py-24 md:py-32 bg-[var(--zen-soft)] zen-paper-texture">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
