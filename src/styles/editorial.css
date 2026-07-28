@@ -1,0 +1,114 @@
+/* ═══════════════════════════════════════════════════════════════
+   EDITORIAL SYSTEM — The Void
+   Tipografía y layout editorial para contenido contemplativo
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ═══ Tipografía ═══ */
+  --tv-type-display-size: clamp(2.5rem, 8vw, 5rem);
+  --tv-type-h1-size: clamp(2rem, 6vw, 4rem);
+  --tv-type-h2-size: clamp(1.5rem, 4vw, 2.5rem);
+  --tv-type-h3-size: clamp(1.25rem, 3vw, 2rem);
+  --tv-type-body-size: clamp(1rem, 2vw, 1.25rem);
+  --tv-type-lead-size: clamp(1.125rem, 2.5vw, 1.5rem);
+
+  /* ═══ Anchos de contenido ═══ */
+  --tv-reading-width: 65ch;
+  --tv-content-width: 48rem;
+  --tv-wide-width: 64rem;
+
+  /* ═══ Espaciado (responsive via media queries below) ═══ */
+  --tv-page-gutter: 1rem;           /* px-4 = 16px (base/móvil) */
+  --tv-section-space: 6rem;         /* py-24 = 96px (base/móvil) */
+  --tv-section-space-compact: 4rem; /* py-16 = 64px */
+
+  /* ═══ Divisores ═══ */
+  --tv-divider-color: var(--zen-border);
+  --tv-divider-width: 1px;
+}
+
+/* Responsive breakpoints matching Tailwind */
+@media (min-width: 640px) {
+  :root {
+    --tv-page-gutter: 1.5rem;       /* sm:px-6 = 24px */
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --tv-section-space: 8rem;       /* md:py-32 = 128px */
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --tv-page-gutter: 2rem;         /* lg:px-8 = 32px */
+  }
+}
+
+/* ═══ Clases tipográficas editoriales ═══ */
+.editorial-display {
+  font-size: var(--tv-type-display-size);
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.editorial-h1 {
+  font-size: var(--tv-type-h1-size);
+  font-weight: 200;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.editorial-h2 {
+  font-size: var(--tv-type-h2-size);
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.editorial-h3 {
+  font-size: var(--tv-type-h3-size);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.editorial-body {
+  font-size: var(--tv-type-body-size);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.editorial-body-large {
+  font-size: var(--tv-type-lead-size);
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.editorial-lead {
+  font-size: var(--tv-type-lead-size);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.editorial-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ═══ Divisor editorial ═══ */
+.editorial-divider {
+  border: none;
+  height: var(--tv-divider-width);
+  background-color: var(--tv-divider-color);
+  margin: var(--tv-section-space) 0;
+}
+
+.editorial-divider--decorative {
+  width: 4rem;
+  height: 2px;
+  background-color: var(--zen-moss);
+  margin: var(--tv-section-space) auto;
+}
