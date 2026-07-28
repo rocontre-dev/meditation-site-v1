@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 /**
  * EditorialDivider — Divisor horizontal con opción decorativa.
  * 
@@ -15,6 +17,11 @@ const EditorialDivider = ({ className = '', decorative = true }) => {
   }
 
   return <hr className={`editorial-divider ${className}`} />;
+};
+
+EditorialDivider.propTypes = {
+  className: PropTypes.string,
+  decorative: PropTypes.bool,
 };
 
 export default EditorialDivider;

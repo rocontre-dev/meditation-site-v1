@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 /**
  * EditorialSection — Sección con tono de fondo y espaciado vertical.
  * 
@@ -30,6 +32,14 @@ const EditorialSection = ({
       {children}
     </Component>
   );
+};
+
+EditorialSection.propTypes = {
+  as: PropTypes.elementType,
+  tone: PropTypes.oneOf(['paper', 'soft', 'transparent']),
+  spacing: PropTypes.oneOf(['default', 'compact']),
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default EditorialSection;

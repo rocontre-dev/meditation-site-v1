@@ -112,3 +112,121 @@
   background-color: var(--zen-moss);
   margin: var(--tv-section-space) auto;
 }
+
+/* ═══ Hero de The Void ═══ */
+.editorial-display {
+  font-size: clamp(4rem, 9vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  font-weight: 300;
+  color: var(--zen-deep);
+}
+
+.editorial-enso-placeholder {
+  font-size: 4rem;
+  opacity: 0.45;
+  margin-bottom: 2rem;
+}
+
+.editorial-tagline {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--zen-muted);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.editorial-scroll-link {
+  display: inline-block;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: var(--zen-muted);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.editorial-scroll-link:hover {
+  opacity: 0.65;
+}
+
+/* ═══ EditorialQuote ═══ */
+.editorial-quote {
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 8rem;
+}
+
+.editorial-quote--left {
+  text-align: left;
+}
+
+.editorial-quote--center {
+  text-align: center;
+}
+
+.editorial-quote--right {
+  text-align: right;
+}
+
+.editorial-quote blockquote {
+  margin: 0;
+}
+
+.editorial-quote-text {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(2.2rem, 4vw, 4.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  color: var(--zen-deep);
+  margin: 0;
+}
+
+.editorial-quote-author {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--zen-muted);
+}
+
+/* ═══ EditorialPrinciples ═══ */
+.editorial-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4rem;
+  padding-block: 6rem;
+}
+
+@media (max-width: 900px) {
+  .editorial-principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .editorial-principles {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.editorial-principle {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-principle-title {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.editorial-principle-description {
+  line-height: 1.9;
+  color: var(--zen-muted);
+}

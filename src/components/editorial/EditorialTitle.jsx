@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 /**
  * EditorialTitle — Título con niveles tipográficos editoriales.
  * 
@@ -26,6 +28,13 @@ const EditorialTitle = ({
       {children}
     </Component>
   );
+};
+
+EditorialTitle.propTypes = {
+  as: PropTypes.oneOf(['h1', 'h2', 'h3']),
+  size: PropTypes.oneOf(['display', 'h1', 'h2', 'h3']),
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default EditorialTitle;

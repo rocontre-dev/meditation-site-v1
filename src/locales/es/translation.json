@@ -188,9 +188,10 @@
     "hero": {
       "eyebrow": "Espacio Interior",
       "title": "The Void",
-      "lead": "Hay momentos en los que avanzar comienza por detenerse.",
+      "lead": "A Space to Listen Within",
       "intro": "The Void es el espacio que aparece cuando dejamos de llenar cada silencio, sostener cada certeza y repetir cada historia.",
-      "cta": "Entrar en el silencio"
+      "cta": "Entrar en el silencio",
+      "scroll": "Desplázate para comenzar"
     },
     "intro": {
       "title": "El espacio entre historias",

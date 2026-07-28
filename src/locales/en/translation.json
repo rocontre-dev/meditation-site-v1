@@ -188,9 +188,10 @@
     "hero": {
       "eyebrow": "Inner Space",
       "title": "The Void",
-      "lead": "There are moments when moving forward begins by stopping.",
+      "lead": "A Space to Listen Within",
       "intro": "The Void is the space that appears when we stop filling every silence, holding every certainty, and repeating every story.",
-      "cta": "Enter the silence"
+      "cta": "Enter the silence",
+      "scroll": "Scroll to begin"
     },
     "intro": {
       "title": "The space between stories",

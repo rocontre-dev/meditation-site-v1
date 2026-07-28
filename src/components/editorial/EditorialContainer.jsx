@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 /**
  * EditorialContainer — Contenedor con ancho máximo responsive.
  * 
@@ -23,6 +25,13 @@ const EditorialContainer = ({
       {children}
     </Component>
   );
+};
+
+EditorialContainer.propTypes = {
+  as: PropTypes.elementType,
+  size: PropTypes.oneOf(['reading', 'content', 'wide']),
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default EditorialContainer;
