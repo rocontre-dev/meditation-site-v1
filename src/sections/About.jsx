@@ -42,7 +42,7 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre-mi" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)] zen-paper-texture">
+    <section id="sobre-mi" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Image */}

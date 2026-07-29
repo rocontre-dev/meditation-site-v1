@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import Card from '../Card';
 
 /**
  * Services preview for Home page.
@@ -53,21 +52,21 @@ const ServicesPreview = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20 mb-16">
           {previewServices.map((service, index) => (
-            <Card key={index} className="flex flex-col h-full">
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[var(--zen-sand)] mb-6">
+            <div key={index} className="text-center">
+              <div className="flex justify-center mb-10">
                 <div className="text-[var(--zen-moss)]">
                   {service.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4">
+              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-5">
                 {service.title}
               </h3>
-              <p className="text-[var(--zen-muted)] leading-relaxed flex-grow">
+              <p className="text-[var(--zen-muted)] leading-relaxed">
                 {service.description}
               </p>
-            </Card>
+            </div>
           ))}
         </div>
 

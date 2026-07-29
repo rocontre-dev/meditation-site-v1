@@ -11,9 +11,9 @@ const AboutPreview = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
+    <section className="zen-section py-24 md:py-32 brand-material-limestone">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[45%_1fr] gap-12 lg:gap-16 items-center">
           {/* Image */}
           <div className="order-1 lg:order-1">
             <div className="aspect-[4/5] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
@@ -29,16 +29,16 @@ const AboutPreview = () => {
 
           {/* Content */}
           <div className="order-2 lg:order-2">
-            <span className="inline-block text-sm font-medium text-[var(--zen-moss)] uppercase tracking-wider mb-4">
+            <span className="inline-block text-sm font-medium text-[var(--color-ink)] uppercase tracking-wider mb-4">
               {t('home.aboutEyebrow')}
             </span>
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-light text-[var(--color-ink)] mb-6 tracking-wide">
               {t('about.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-6">
+            <p className="text-lg text-[var(--color-text-primary)] leading-relaxed mb-6">
               {t('about.subtitle')}
             </p>
-            <p className="text-[var(--zen-muted)] leading-relaxed mb-8">
+            <p className="text-[var(--color-text-primary)] leading-relaxed mb-8">
               {t('about.paragraph1')}
             </p>
             <Button

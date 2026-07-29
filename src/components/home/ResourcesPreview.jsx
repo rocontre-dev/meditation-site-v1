@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import Card from '../Card';
 
 /**
  * Resources preview for Home page.
@@ -52,21 +51,19 @@ const ResourcesPreview = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="max-w-2xl mx-auto space-y-12 mb-16">
           {resources.map((resource, index) => (
-            <Card key={index} className="flex flex-col h-full">
-              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[var(--zen-sand)] mb-6">
-                <div className="text-[var(--zen-moss)]">
-                  {resource.icon}
-                </div>
+            <div key={index} className="text-center">
+              <div className="flex justify-center mb-6 text-[var(--zen-moss)]">
+                {resource.icon}
               </div>
-              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4">
+              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-3">
                 {resource.title}
               </h3>
-              <p className="text-[var(--zen-muted)] leading-relaxed flex-grow">
+              <p className="text-[var(--zen-muted)] leading-relaxed">
                 {resource.description}
               </p>
-            </Card>
+            </div>
           ))}
         </div>
 

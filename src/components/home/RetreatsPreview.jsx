@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
-import Card from '../Card';
 
 /**
  * Retreats preview for Home page.
@@ -22,50 +21,38 @@ const RetreatsPreview = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto space-y-16 mb-16">
           {/* Retreat 1 */}
-          <Card className="flex flex-col">
-            <div className="flex items-center justify-between mb-4">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[var(--zen-sand)] text-[var(--zen-muted)]">
-                July 2026
-              </span>
-              <span className="text-[var(--zen-moss)] text-sm">5 days</span>
+          <div className="text-left">
+            <div className="text-sm text-[var(--zen-muted)] mb-3 tracking-wide">
+              July 2026 · 5 days
             </div>
-            <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-3">
+            <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4">
               {t('retreats.retreat1Title')}
             </h3>
-            <p className="text-[var(--zen-muted)] leading-relaxed mb-4 flex-grow">
+            <p className="text-[var(--zen-muted)] leading-relaxed mb-4">
               {t('retreats.retreat1Desc')}
             </p>
-            <div className="flex items-center gap-2 text-[var(--zen-moss)] text-sm mb-6">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span>12 spots available</span>
+            <div className="text-sm text-[var(--zen-moss)]">
+              12 spots available
             </div>
-          </Card>
+          </div>
 
           {/* Retreat 2 */}
-          <Card className="flex flex-col">
-            <div className="flex items-center justify-between mb-4">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[var(--zen-sand)] text-[var(--zen-muted)]">
-                September 2026
-              </span>
-              <span className="text-[var(--zen-moss)] text-sm">7 days</span>
+          <div className="text-left">
+            <div className="text-sm text-[var(--zen-muted)] mb-3 tracking-wide">
+              September 2026 · 7 days
             </div>
-            <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-3">
+            <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4">
               {t('retreats.retreat3Title')}
             </h3>
-            <p className="text-[var(--zen-muted)] leading-relaxed mb-4 flex-grow">
+            <p className="text-[var(--zen-muted)] leading-relaxed mb-4">
               {t('retreats.retreat3Desc')}
             </p>
-            <div className="flex items-center gap-2 text-[var(--zen-moss)] text-sm mb-6">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span>8 spots available</span>
+            <div className="text-sm text-[var(--zen-moss)]">
+              8 spots available
             </div>
-          </Card>
+          </div>
         </div>
 
         <div className="text-center">
