@@ -2,8 +2,9 @@ import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
 import meditationPractice from '../assets/images/meditation/meditation-practice.webp';
 
-const OnlineCourse = () => {
+const OnlineCourse = ({ variant }) => {
   const { t } = useTranslation();
+  const isHomeVariant = variant === 'home';
 
   const features = [
     {
@@ -36,61 +37,112 @@ const OnlineCourse = () => {
   ];
 
   return (
-    <section className="zen-section py-24 md:py-32 bg-[var(--zen-cream)]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content */}
-          <div>
+    <section className={`zen-section ${isHomeVariant ? 'py-20 md:py-28 home-editorial-surface' : 'py-24 md:py-32 bg-[var(--zen-cream)]'}`}>
+      {isHomeVariant ? (
+        /* Home variant: centered image-driven teaching flow */
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('onlineCourse.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-6">
+            <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
               {t('onlineCourse.subtitle')}
             </p>
-            <p className="text-[var(--zen-muted)] leading-relaxed mb-8">
-              {t('hero.subtitle')}
-            </p>
+          </div>
 
-            {/* Features list */}
-            <div className="space-y-6 mb-10">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[var(--zen-sand)] flex items-center justify-center text-[var(--zen-moss)]">
-                    {feature.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-[var(--zen-deep)] mb-1">
-                      {feature.title}
-                    </h4>
-                    <p className="text-[var(--zen-muted)] text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
+          {/* Large cinematic image */}
+          <div className="max-w-4xl mx-auto mb-12 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+            <img
+              src={meditationPractice}
+              alt={t('onlineCourse.imageAlt')}
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          {/* Module list */}
+          <div className="max-w-2xl mx-auto space-y-6 mb-12">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <div className="flex-shrink-0 text-[var(--zen-moss)] pt-0.5">
+                  {feature.icon}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <h4 className="font-medium text-[var(--zen-deep)] mb-1">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[var(--zen-muted)] text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
 
+          <div className="text-center">
             <Button variant="primary" className="px-8 py-3">
               {t('onlineCourse.enroll')}
             </Button>
           </div>
+        </div>
+      ) : (
+        /* Default variant: two-column layout */
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+                {t('onlineCourse.title')}
+              </h2>
+              <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-6">
+                {t('onlineCourse.subtitle')}
+              </p>
+              <p className="text-[var(--zen-muted)] leading-relaxed mb-8">
+                {t('hero.subtitle')}
+              </p>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="aspect-[4/3] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
-              <img
-                src={meditationPractice}
-                alt={t('onlineCourse.imageAlt')}
-                className="w-full h-full object-cover object-center"
-                loading="lazy"
-                decoding="async"
-              />
+              {/* Features list */}
+              <div className="space-y-6 mb-10">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[var(--zen-sand)] flex items-center justify-center text-[var(--zen-moss)]">
+                      {feature.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-[var(--zen-deep)] mb-1">
+                        {feature.title}
+                      </h4>
+                      <p className="text-[var(--zen-muted)] text-sm">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <Button variant="primary" className="px-8 py-3">
+                {t('onlineCourse.enroll')}
+              </Button>
             </div>
-            {/* Decorative elements */}
-            <div className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />
+
+            {/* Image */}
+            <div className="relative">
+              <div className="aspect-[4/3] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+                <img
+                  src={meditationPractice}
+                  alt={t('onlineCourse.imageAlt')}
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -z-10 -top-4 -right-4 w-full h-full rounded-[var(--zen-radius-2xl)] bg-[var(--zen-border)]/30" />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };

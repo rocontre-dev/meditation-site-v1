@@ -11,7 +11,7 @@ const AboutPreview = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="zen-section py-24 md:py-32 brand-material-limestone">
+    <section className="zen-section py-20 md:py-28 home-editorial-material">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[45%_1fr] gap-12 lg:gap-16 items-center">
           {/* Image */}

@@ -41,7 +41,7 @@ const ServicesPreview = () => {
   ];
 
   return (
-    <section className="zen-section py-24 md:py-32 bg-[var(--zen-sand)]">
+    <section className="zen-section py-20 md:py-24 home-editorial-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">

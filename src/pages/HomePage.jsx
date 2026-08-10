@@ -37,13 +37,13 @@ const HomePage = () => {
       <ServicesPreview />
 
       {/* 4. Online Course Feature */}
-      <OnlineCourse />
+      <OnlineCourse variant="home" />
 
       {/* 5. Retreats Preview */}
       <RetreatsPreview />
 
       {/* 6. Featured Podcast */}
-      <FeaturedPodcast />
+      <FeaturedPodcast variant="home" />
 
       {/* 7. Resources Preview */}
       <ResourcesPreview />

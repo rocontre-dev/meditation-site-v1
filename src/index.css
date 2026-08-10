@@ -379,26 +379,44 @@
      ────────────────────────────────────────────────────────────── */
   .zen-hero-background {
     min-height: 100vh;
+    background-color: #F3EFE7;
+  }
+
+  .zen-hero-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background-image:
       linear-gradient(
         rgba(24, 35, 27, 0.38),
         rgba(24, 35, 27, 0.5)
       ),
-      url('./assets/images/hero/hero-main.webp');
+      url('./assets/images/hero/hero-main-v2.png');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    -webkit-mask-image: url('./assets/images/hero/hero-organic-alpha-mask-v2.png');
+    mask-image: url('./assets/images/hero/hero-organic-alpha-mask-v2.png');
+    -webkit-mask-mode: alpha;
+    mask-mode: alpha;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    pointer-events: none;
   }
 
   @media (min-width: 640px) {
-    .zen-hero-background {
+    .zen-hero-background::before {
       background-position: center 30%;
     }
   }
 
   @media (min-width: 1024px) {
-    .zen-hero-background {
-      background-position: center;
+    .zen-hero-background::before {
+      background-position: center 58%;
     }
   }
 
@@ -464,34 +482,6 @@
   }
 
   /* ──────────────────────────────────────────────────────────────
-     ORB DECORATIVO
-     Círculos difuminados para decoración de fondo
-     ────────────────────────────────────────────────────────────── */
-  .zen-orb {
-    position: absolute;
-    border-radius: var(--zen-radius-full);
-    filter: blur(80px);
-    pointer-events: none;
-    z-index: var(--zen-z-base);
-  }
-
-  .zen-orb--moss {
-    background: rgba(125, 140, 122, 0.3);
-  }
-
-  .zen-orb--sage {
-    background: rgba(182, 194, 174, 0.3);
-  }
-
-  .zen-orb--sand {
-    background: rgba(232, 227, 215, 0.4);
-  }
-
-  .zen-orb--warm {
-    background: rgba(209, 194, 161, 0.3);
-  }
-
-  /* ──────────────────────────────────────────────────────────────
      GRADIENTE SUAVE SUPERPUESTO
      Capa de gradiente para profundidad visual
      ────────────────────────────────────────────────────────────── */
@@ -513,53 +503,6 @@
       rgba(62, 75, 63, 0) 0%,
       rgba(62, 75, 63, 0.3) 100%
     );
-  }
-
-  /* ──────────────────────────────────────────────────────────────
-     LUZ AMBIENTAL POSICIONABLE
-     Puntos de luz para crear atmósfera
-     ────────────────────────────────────────────────────────────── */
-  .zen-ambient-light {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: var(--zen-radius-full);
-    background: radial-gradient(
-      circle,
-      rgba(182, 194, 174, 0.15) 0%,
-      transparent 70%
-    );
-    filter: blur(40px);
-    pointer-events: none;
-    z-index: var(--zen-z-base);
-  }
-
-  .zen-ambient-light--warm {
-    background: radial-gradient(
-      circle,
-      rgba(209, 194, 161, 0.2) 0%,
-      transparent 70%
-    );
-  }
-
-  .zen-ambient-light--top-left {
-    top: -150px;
-    left: -150px;
-  }
-
-  .zen-ambient-light--top-right {
-    top: -150px;
-    right: -150px;
-  }
-
-  .zen-ambient-light--bottom-left {
-    bottom: -150px;
-    left: -150px;
-  }
-
-  .zen-ambient-light--bottom-right {
-    bottom: -150px;
-    right: -150px;
   }
 
   /* ──────────────────────────────────────────────────────────────
@@ -635,6 +578,51 @@
     background-repeat: repeat;
     background-position: top left;
     background-size: 2048px 2048px;
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     HOME-ONLY EDITORIAL SURFACE SYSTEM
+     One continuous warm mineral editorial canvas for HomePage.
+     All editorial sections share this surface to eliminate
+     the "stack of rectangles" effect.
+     ────────────────────────────────────────────────────────────── */
+
+  /* Canonical Home editorial surface - warm mineral ivory */
+  .home-editorial-surface {
+    background-color: #F3EFE7;
+  }
+
+  /* Editorial surface with subtle ambient limestone grain
+     Applied to About to initiate the material texture
+     that visually continues through the editorial body */
+  .home-editorial-material {
+    background-color: #F3EFE7;
+    position: relative;
+  }
+
+  .home-editorial-material::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/images/backgrounds/limestone-material.webp');
+    background-repeat: repeat;
+    background-position: top left;
+    background-size: 2048px 2048px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 60px,
+      #000 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0,
+      #000 60px,
+      #000 100%
+    );
   }
 
   /* ──────────────────────────────────────────────────────────────
