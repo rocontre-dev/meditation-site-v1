@@ -37,7 +37,7 @@ const OnlineCourse = ({ variant }) => {
   ];
 
   return (
-    <section className={`zen-section ${isHomeVariant ? 'pt-16 pb-4 sm:py-20 md:py-28 home-editorial-surface' : 'py-24 md:py-32 bg-[var(--zen-cream)]'}`}>
+    <section className={`zen-section ${isHomeVariant ? 'pt-16 pb-4 sm:py-20 md:py-28 home-editorial-surface' : 'site-section !pb-8 md:!pb-4 bg-[var(--zen-cream)]'}`}>
       {isHomeVariant ? (
         /* Home variant: centered image-driven teaching flow */
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,14 +88,14 @@ const OnlineCourse = ({ variant }) => {
         </div>
       ) : (
         /* Default variant: two-column layout */
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Content */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+              <h2 className="site-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
                 {t('onlineCourse.title')}
               </h2>
-              <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-6">
+              <p className="site-section-lead text-[var(--zen-muted)] leading-relaxed mb-6">
                 {t('onlineCourse.subtitle')}
               </p>
               <p className="text-[var(--zen-muted)] leading-relaxed mb-8">

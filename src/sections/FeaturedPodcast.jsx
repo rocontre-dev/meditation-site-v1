@@ -15,7 +15,7 @@ const FeaturedPodcast = ({ variant }) => {
   }));
 
   return (
-    <section className={`zen-section ${isHomeVariant ? 'py-20 md:py-28 home-editorial-surface' : 'py-24 md:py-32 bg-[var(--zen-soft)]'}`}>
+    <section className={`zen-section ${isHomeVariant ? 'py-20 md:py-28 home-editorial-surface' : 'site-section !pb-8 md:!pb-4 bg-[var(--zen-soft)]'}`}>
       {isHomeVariant ? (
         /* Home variant: editorial text blocks, no cards */
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,13 +67,13 @@ const FeaturedPodcast = ({ variant }) => {
         </div>
       ) : (
         /* Default variant: card-based layout */
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+            <h2 className="site-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('featuredPodcast.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
+            <p className="site-section-lead site-container-narrow text-[var(--zen-muted)] leading-relaxed">
               {t('featuredPodcast.subtitle')}
             </p>
           </div>

@@ -42,8 +42,8 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre-mi" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="sobre-mi" className="zen-section site-section bg-[var(--zen-soft)]">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Image */}
           <div className="order-1 lg:order-1 relative">
@@ -70,10 +70,10 @@ const About = () => {
 
           {/* Content */}
           <div className="order-2 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+            <h2 className="site-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('about.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-8">
+            <p className="site-section-lead text-[var(--zen-muted)] leading-relaxed mb-8">
               {t('about.subtitle')}
             </p>
 

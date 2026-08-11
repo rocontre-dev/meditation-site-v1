@@ -28,14 +28,14 @@ const Retreats = () => {
   ];
 
   return (
-    <section id="retiros" className="zen-section py-24 md:py-32 bg-[var(--zen-sage)]/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="retiros" className="zen-section site-section bg-[var(--zen-sage)]/10">
+      <div className="site-container">
         {/* Section header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+          <h2 className="site-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
             {t('retreats.title')}
           </h2>
-          <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
+          <p className="site-section-lead site-container-narrow text-[var(--zen-muted)] leading-relaxed">
             {t('retreats.subtitle')}
           </p>
         </div>

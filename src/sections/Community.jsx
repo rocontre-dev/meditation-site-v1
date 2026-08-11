@@ -13,8 +13,8 @@ const Community = () => {
   ];
 
   return (
-    <section id="comunidad" className="zen-section py-24 md:py-32 bg-[var(--zen-soft)]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="comunidad" className="zen-section site-section !pb-8 md:!pb-4 bg-[var(--zen-soft)]">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image placeholder - order first on desktop */}
           <div className="order-2 lg:order-1 relative">
@@ -37,10 +37,10 @@ const Community = () => {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+            <h2 className="site-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('community.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] leading-relaxed mb-6">
+            <p className="site-section-lead text-[var(--zen-muted)] leading-relaxed mb-6">
               {t('community.subtitle')}
             </p>
             <p className="text-[var(--zen-muted)] leading-relaxed mb-8">
