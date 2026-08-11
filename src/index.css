@@ -354,6 +354,7 @@
     text-wrap: balance;
   }
 
+  .site-display-title,
   .home-hero-title {
     font-size: clamp(
       2rem,
@@ -362,6 +363,7 @@
     );
   }
 
+  .site-section-title,
   .home-section-title {
     font-size: clamp(
       1.75rem,
@@ -375,6 +377,7 @@
     );
   }
 
+  .site-section-lead,
   .home-section-lead {
     font-size: clamp(
       1rem,
@@ -384,22 +387,26 @@
   }
 
   @media (max-width: 767px) {
+    .site-section-title,
     .home-section-title {
       text-wrap: balance;
     }
 
+    .site-section-lead,
     .home-section-lead {
       text-wrap: pretty;
     }
   }
 
   @media (min-width: 768px) {
+    .site-display-title,
     .home-hero-title {
       font-size: 3rem;
     }
   }
 
   @media (min-width: 1024px) {
+    .site-display-title,
     .home-hero-title {
       font-size: 3.75rem;
     }
