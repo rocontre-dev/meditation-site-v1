@@ -16,7 +16,7 @@ const AboutPreview = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[45%_1fr] gap-12 lg:gap-16 items-center">
           {/* Image */}
           <div className="order-1 lg:order-1">
-            <div className="aspect-[4/5] rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+            <div className="aspect-[4/5] sm:max-w-[560px] sm:mx-auto lg:max-w-none lg:mx-0 rounded-[var(--zen-radius-2xl)] bg-[var(--zen-cream)] border border-[var(--zen-border)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
               <img
                 src={fabrizioPortrait}
                 alt={t('about.photoAlt')}
@@ -28,14 +28,14 @@ const AboutPreview = () => {
           </div>
 
           {/* Content */}
-          <div className="order-2 lg:order-2">
-            <span className="inline-block text-sm font-medium text-[var(--color-ink)] uppercase tracking-wider mb-4">
+          <div className="order-2 text-center sm:text-left lg:order-2">
+            <span className="hidden text-sm font-medium text-[var(--color-ink)] uppercase tracking-wider mb-4 sm:inline-block">
               {t('home.aboutEyebrow')}
             </span>
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--color-ink)] mb-6 tracking-wide">
+            <h2 className="home-section-title font-light text-[var(--color-ink)] mb-6 tracking-wide">
               {t('about.title')}
             </h2>
-            <p className="text-lg text-[var(--color-text-primary)] leading-relaxed mb-6">
+            <p className="home-section-lead text-[var(--color-text-primary)] leading-relaxed mb-6">
               {t('about.subtitle')}
             </p>
             <p className="text-[var(--color-text-primary)] leading-relaxed mb-8">

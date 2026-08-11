@@ -20,10 +20,10 @@ const FeaturedPodcast = ({ variant }) => {
         /* Home variant: editorial text blocks, no cards */
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+            <h2 className="home-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('featuredPodcast.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
+            <p className="home-section-lead text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
               {t('featuredPodcast.subtitle')}
             </p>
           </div>

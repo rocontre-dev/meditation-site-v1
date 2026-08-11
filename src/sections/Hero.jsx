@@ -11,8 +11,9 @@ const Hero = () => {
     <section id="inicio" className="zen-hero-background zen-section relative min-h-screen flex items-center justify-center pt-24 md:pt-28">
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[var(--zen-cream)] leading-tight mb-8 tracking-wide">
-          {t('hero.title')}<br className="hidden md:block" />
+        <h1 className="home-hero-title font-light text-[var(--zen-cream)] leading-tight mb-8 tracking-wide">
+          {t('hero.title')}{' '}
+          <br className="hidden md:block" />
           <span className="font-normal">{t('hero.titleHighlight')}</span>
         </h1>
 
@@ -40,8 +41,8 @@ const Hero = () => {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-20 flex flex-wrap items-center justify-center gap-10 text-[#3F5145] text-sm">
-          <div className="flex items-center gap-3">
+        <div className="mt-20 grid w-full grid-cols-3 items-start gap-0 text-[#3F5145] text-sm sm:flex sm:w-auto sm:flex-wrap sm:items-center sm:justify-center sm:gap-10">
+          <div className="flex flex-col items-center justify-start gap-3 text-center sm:flex-row sm:text-left">
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-deep)]">
               <svg className="w-5 h-5 text-[var(--zen-sand)]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
@@ -49,7 +50,7 @@ const Hero = () => {
             </div>
             <span>{t('hero.feature1')}</span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col items-center justify-start gap-3 text-center sm:flex-row sm:text-left">
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-deep)]">
               <svg className="w-5 h-5 text-[var(--zen-sand)]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
@@ -57,7 +58,7 @@ const Hero = () => {
             </div>
             <span>{t('hero.feature2')}</span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col items-center justify-start gap-3 text-center sm:flex-row sm:text-left">
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-[var(--zen-deep)]">
               <svg className="w-5 h-5 text-[var(--zen-sand)]" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />

@@ -12,10 +12,10 @@ const ContactCallout = () => {
   return (
     <section className="zen-section py-16 md:py-20 home-editorial-surface">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+        <h2 className="home-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
           {t('home.contactHeading')}
         </h2>
-        <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="home-section-lead text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed mb-10">
           {t('home.contactSubtitle')}
         </p>
         <Button

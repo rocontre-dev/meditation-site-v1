@@ -46,9 +46,35 @@ const PodcastPromoFloating = () => {
   if (isDismissed || !isVisible) return null;
 
   return (
-    <div
+    <>
+      <a
+        href={spotifyUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={t('podcastPromo.badge')}
+        className={`
+          sm:hidden fixed z-50 bottom-4 right-4
+          w-[52px] h-[52px]
+          flex items-center justify-center
+          bg-[var(--zen-cream)]/88 backdrop-blur-md
+          border border-[var(--zen-sage)]/40
+          rounded-full
+          shadow-[var(--zen-shadow-medium)]
+          transition-all duration-500 ease-out
+          focus:outline-none focus:ring-2 focus:ring-[var(--zen-moss)] focus:ring-offset-2 focus:ring-offset-[var(--zen-cream)]
+          ${isPulsing ? 'shadow-[var(--zen-shadow-float)]' : ''}
+        `}
+      >
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--zen-sand)]">
+          <svg className="w-4 h-4 text-[var(--zen-moss)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+          </svg>
+        </span>
+      </a>
+
+      <div
       className={`
-        fixed z-50
+        hidden sm:block fixed z-50
         bottom-6 right-6
         md:bottom-8 md:right-8
         transition-all duration-500 ease-out
@@ -57,8 +83,8 @@ const PodcastPromoFloating = () => {
       `}
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
-    >
-      <div
+      >
+        <div
         className={`
           relative overflow-hidden
           bg-[var(--zen-cream)]/88 backdrop-blur-md
@@ -154,8 +180,9 @@ const PodcastPromoFloating = () => {
             </div>
           )}
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

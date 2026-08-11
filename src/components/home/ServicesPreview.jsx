@@ -41,26 +41,26 @@ const ServicesPreview = () => {
   ];
 
   return (
-    <section className="zen-section py-20 md:py-24 home-editorial-surface">
+    <section className="zen-section py-12 sm:py-20 md:py-24 home-editorial-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="home-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
             {t('services.title')}
           </h2>
-          <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
+          <p className="home-section-lead text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
             {t('services.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-16 lg:gap-20 mb-12 sm:mb-16">
           {previewServices.map((service, index) => (
             <div key={index} className="text-center">
-              <div className="flex justify-center mb-10">
+              <div className="flex justify-center mb-6 sm:mb-10">
                 <div className="text-[var(--zen-moss)]">
                   {service.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-5">
+              <h3 className="text-xl font-medium text-[var(--zen-deep)] mb-4 sm:mb-5">
                 {service.title}
               </h3>
               <p className="text-[var(--zen-muted)] leading-relaxed">

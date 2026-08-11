@@ -37,21 +37,21 @@ const OnlineCourse = ({ variant }) => {
   ];
 
   return (
-    <section className={`zen-section ${isHomeVariant ? 'py-20 md:py-28 home-editorial-surface' : 'py-24 md:py-32 bg-[var(--zen-cream)]'}`}>
+    <section className={`zen-section ${isHomeVariant ? 'pt-16 pb-4 sm:py-20 md:py-28 home-editorial-surface' : 'py-24 md:py-32 bg-[var(--zen-cream)]'}`}>
       {isHomeVariant ? (
         /* Home variant: centered image-driven teaching flow */
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-light text-[var(--zen-deep)] mb-6 tracking-wide">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="home-section-title font-light text-[var(--zen-deep)] mb-6 tracking-wide">
               {t('onlineCourse.title')}
             </h2>
-            <p className="text-lg text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
+            <p className="home-section-lead text-[var(--zen-muted)] max-w-2xl mx-auto leading-relaxed">
               {t('onlineCourse.subtitle')}
             </p>
           </div>
 
           {/* Large cinematic image */}
-          <div className="max-w-4xl mx-auto mb-12 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
+          <div className="max-w-4xl mx-auto mb-10 sm:mb-12 rounded-[var(--zen-radius-2xl)] overflow-hidden shadow-[var(--zen-shadow-medium)]">
             <img
               src={meditationPractice}
               alt={t('onlineCourse.imageAlt')}
@@ -62,10 +62,10 @@ const OnlineCourse = ({ variant }) => {
           </div>
 
           {/* Module list */}
-          <div className="max-w-2xl mx-auto space-y-6 mb-12">
+          <div className="max-w-2xl mx-auto space-y-8 mb-10 sm:space-y-6 sm:mb-12">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="flex-shrink-0 text-[var(--zen-moss)] pt-0.5">
+              <div key={index} className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-start sm:gap-4 sm:text-left">
+                <div className="flex-shrink-0 text-[var(--zen-moss)] pt-0 sm:pt-0.5">
                   {feature.icon}
                 </div>
                 <div>

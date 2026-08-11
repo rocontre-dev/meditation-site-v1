@@ -6,11 +6,10 @@ import ServicesPreview from '../components/home/ServicesPreview';
 import RetreatsPreview from '../components/home/RetreatsPreview';
 import ResourcesPreview from '../components/home/ResourcesPreview';
 import BookingCallout from '../components/home/BookingCallout';
-import ContactCallout from '../components/home/ContactCallout';
 
 /**
  * Home page - enriched landing page with curated previews.
- * Contains 10 sections:
+ * Contains 9 sections:
  * 1. Hero
  * 2. About Preview
  * 3. Services Preview
@@ -20,7 +19,6 @@ import ContactCallout from '../components/home/ContactCallout';
  * 7. Resources Preview
  * 8. Community Preview (via FeaturedPodcast)
  * 9. Booking CTA
- * 10. Contact CTA
  *
  * Does NOT include full About, Services, Resources, Bookings or Contact sections.
  */
@@ -52,9 +50,6 @@ const HomePage = () => {
 
       {/* 9. Booking CTA */}
       <BookingCallout />
-
-      {/* 10. Contact CTA */}
-      <ContactCallout />
     </>
   );
 };

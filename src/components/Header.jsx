@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -74,7 +74,7 @@ const Header = () => {
             <LanguageSwitcher />
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-[var(--zen-muted)] hover:text-[var(--zen-moss)]"
@@ -97,7 +97,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[var(--zen-sand)] border-t border-[var(--zen-border)]">
+        <div className="lg:hidden bg-[var(--zen-sand)] border-t border-[var(--zen-border)]">
           <nav className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
               <NavLink
