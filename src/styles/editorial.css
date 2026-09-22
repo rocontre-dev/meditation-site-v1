@@ -4,23 +4,28 @@
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
-  /* ═══ Tipografía ═══ */
-  --tv-type-display-size: clamp(2.5rem, 8vw, 5rem);
-  --tv-type-h1-size: clamp(2rem, 6vw, 4rem);
-  --tv-type-h2-size: clamp(1.5rem, 4vw, 2.5rem);
-  --tv-type-h3-size: clamp(1.25rem, 3vw, 2rem);
-  --tv-type-body-size: clamp(1rem, 2vw, 1.25rem);
-  --tv-type-lead-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  /* ═══ Tipografía ═══
+     Scale normalized to the Home typography system (source of truth).
+     Home tops out at 60px (hero) / 36px (section titles); The Void uses the
+     same `calc(rem + vw)` curves so both pages scale identically. */
+  --tv-type-display-size: clamp(2rem, calc(1.75rem + 1.25vw), 3.75rem); /* 32 / 48 / 60 — Home hero */
+  --tv-type-h1-size: clamp(1.75rem, calc(1.393rem + 1.786vw), 2.25rem);
+  --tv-type-h2-size: clamp(1.75rem, calc(1.393rem + 1.786vw), 2.25rem); /* 28 / 31 / 36 — Home section title */
+  --tv-type-h3-size: clamp(1.25rem, calc(1.1rem + 0.6vw), 1.5rem);
+  --tv-type-body-size: 1rem;                                            /* 16 — Home body */
+  --tv-type-lead-size: clamp(1rem, calc(0.875rem + 0.625vw), 1.125rem); /* Home section lead */
 
   /* ═══ Anchos de contenido ═══ */
-  --tv-reading-width: 65ch;
+  --tv-reading-width: 62ch;
   --tv-content-width: 48rem;
   --tv-wide-width: 64rem;
 
   /* ═══ Espaciado (responsive via media queries below) ═══ */
-  --tv-page-gutter: 1rem;           /* px-4 = 16px (base/móvil) */
-  --tv-section-space: 6rem;         /* py-24 = 96px (base/móvil) */
-  --tv-section-space-compact: 4rem; /* py-16 = 64px */
+  --tv-page-gutter: 1rem;             /* px-4 = 16px (base/móvil) */
+  --tv-section-space: 3.5rem;         /* 56px (base/móvil) */
+  --tv-section-space-compact: 2.5rem; /* 40px */
+  /* Divider = subtle chapter marker, NOT a second section-sized gap */
+  --tv-divider-space: 1.5rem;         /* 24px (base/móvil) */
 
   /* ═══ Divisores ═══ */
   --tv-divider-color: var(--zen-border);
@@ -36,7 +41,9 @@
 
 @media (min-width: 768px) {
   :root {
-    --tv-section-space: 8rem;       /* md:py-32 = 128px */
+    --tv-section-space: 4.5rem;         /* 72px */
+    --tv-section-space-compact: 3.5rem; /* 56px */
+    --tv-divider-space: 2rem;           /* 32px */
   }
 }
 
@@ -49,9 +56,10 @@
 /* ═══ Clases tipográficas editoriales ═══ */
 .editorial-display {
   font-size: var(--tv-type-display-size);
-  font-weight: 200;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--zen-deep);
 }
 
 .editorial-h1 {
@@ -103,24 +111,18 @@
   border: none;
   height: var(--tv-divider-width);
   background-color: var(--tv-divider-color);
-  margin: var(--tv-section-space) 0;
+  margin: var(--tv-divider-space) 0;
 }
 
 .editorial-divider--decorative {
-  width: 4rem;
-  height: 2px;
+  width: 3rem;
+  height: 1px;
   background-color: var(--zen-moss);
-  margin: var(--tv-section-space) auto;
+  opacity: 0.6;
+  margin: var(--tv-divider-space) auto;
 }
 
 /* ═══ Hero de The Void ═══ */
-.editorial-display {
-  font-size: clamp(4rem, 9vw, 7rem);
-  line-height: 0.92;
-  letter-spacing: -0.04em;
-  font-weight: 300;
-  color: var(--zen-deep);
-}
 
 .editorial-enso-placeholder {
   font-size: 4rem;
@@ -129,9 +131,9 @@
 }
 
 .editorial-tagline {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  font-weight: 300;
-  line-height: 1.7;
+  font-size: clamp(1.125rem, calc(1rem + 0.5vw), 1.25rem); /* 18 / 19 / 20 — Home hero subtitle */
+  font-weight: 400;
+  line-height: 1.625;
   color: var(--zen-muted);
   max-width: 42rem;
   margin: 0 auto;
@@ -229,4 +231,411 @@
 .editorial-principle-description {
   line-height: 1.9;
   color: var(--zen-muted);
+}
+/* THE VOID - Modificacion de Patrones: scoped additions */
+
+.editorial-eyebrow--void {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: var(--zen-moss);
+}
+
+.editorial-hero__mark {
+  font-size: 2.25rem;
+  line-height: 1;
+  opacity: 0.45;
+  margin-bottom: 2rem;
+  color: var(--zen-deep);
+}
+
+.editorial-hero__title {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .editorial-hero__title {
+    letter-spacing: -0.02em;
+  }
+}
+
+.editorial-hero__lead {
+  margin-top: 2.5rem;
+}
+
+/* ═══ A. BODY PROSE ═══
+   Typography reproduced EXACTLY from the approved Home body copy
+   (see src/components/home/AboutPreview.jsx — `leading-relaxed` on the
+   inherited Inter body font). Home is the source of truth and is unmodified. */
+.editorial-prose {
+  max-width: var(--tv-reading-width);
+  margin-inline: auto;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+  letter-spacing: normal;
+  color: var(--zen-muted);
+  text-wrap: pretty;
+}
+
+/* ═══ B. PARAGRAPH RHYTHM ═══ Single source for prose paragraph separation.
+   0.75em at the 16px Home body size = 12px between continuous paragraphs. */
+.editorial-prose p + p {
+  margin-top: 0.75em;
+}
+
+/* Slightly more space only where a real conceptual break exists. */
+.editorial-prose p.editorial-prose__em {
+  margin-top: 1.25rem;
+  color: var(--zen-deep);
+  font-weight: 400;
+}
+
+.editorial-prose__lead {
+  margin-bottom: 1.25rem;
+  color: var(--zen-deep);
+  font-weight: 400;
+}
+
+/* ═══ C. EDITORIAL LADDER ═══ Compact sequence of short serif statements. */
+.editorial-ladder {
+  margin: 1.25rem auto;
+  max-width: var(--tv-reading-width);
+  padding-left: 1.25rem;
+  /* Subtle moss rule: belongs to the text block, never decorative or dominant. */
+  border-left: 1px solid color-mix(in srgb, var(--zen-moss) 55%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Both ladders and diagnostic question sequences live inside .editorial-prose,
+   whose `p + p` rule (specificity 0,1,2) would otherwise stack an inherited
+   margin on top of the flex gap and inflate each sequence. This neutralizer
+   (specificity 0,2,2) wins, making `gap` the single source of spacing. */
+.editorial-ladder p + p,
+.editorial-process__questions p + p {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .editorial-ladder {
+    margin: 1rem auto;
+    gap: 0.375rem;
+  }
+}
+
+.editorial-ladder__line {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.0625rem, calc(1rem + 0.35vw), 1.125rem); /* 17 / 18 / 18 */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--zen-deep);
+}
+
+.editorial-ladder__line--quiet {
+  font-family: var(--font-body);
+  font-size: var(--tv-type-body-size);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--zen-muted);
+}
+
+.editorial-statement {
+  background-color: var(--zen-deep);
+  color: var(--zen-cream);
+  padding-block: var(--tv-section-space);
+}
+
+.editorial-statement .editorial-title {
+  color: var(--zen-cream);
+}
+
+.editorial-statement .editorial-eyebrow--void {
+  color: var(--color-stone);
+}
+
+.editorial-statement__premise {
+  margin: 2rem auto;
+  max-width: 48rem;
+  font-family: var(--font-editorial-serif);
+  font-size: var(--tv-type-h2-size); /* 28 / 31 / 36 — Home section title scale */
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--zen-cream);
+}
+
+.editorial-statement .editorial-ladder {
+  border-left-color: var(--color-stone);
+}
+
+.editorial-statement .editorial-ladder__line {
+  color: var(--zen-cream);
+}
+
+.editorial-statement .editorial-prose {
+  color: var(--color-stone);
+}
+
+.editorial-statement .editorial-prose p.editorial-prose__em,
+.editorial-statement .editorial-prose p.editorial-prose__lead {
+  color: var(--zen-cream);
+}
+
+.editorial-map__grid {
+  margin: 2.5rem auto 0;
+  max-width: var(--tv-wide-width);
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--zen-border);
+}
+
+@media (min-width: 768px) {
+  .editorial-map__grid {
+    grid-template-columns: minmax(0, 16rem) minmax(0, 20rem) 1fr;
+    column-gap: 2rem;
+  }
+  .editorial-map__item {
+    display: contents;
+  }
+  .editorial-map__item > * {
+    padding-block: 2rem;
+  }
+  .editorial-map__item > * + * {
+    border-top: 1px solid var(--zen-border);
+  }
+}
+
+@media (max-width: 767px) {
+  .editorial-map__item {
+    padding-block: 2rem;
+  }
+  .editorial-map__item + .editorial-map__item {
+    border-top: 1px solid var(--zen-border);
+  }
+  .editorial-map__item > * + * {
+    margin-top: 0.75rem;
+  }
+}
+
+.editorial-map__name {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.125rem, calc(1rem + 0.5vw), 1.375rem); /* 18 / 20 / 22 */
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--zen-deep);
+}
+
+.editorial-map__zone {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: var(--zen-moss);
+}
+
+.editorial-map__desc {
+  font-size: var(--tv-type-body-size);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--zen-muted);
+}
+
+.editorial-map__note {
+  margin: 3rem auto 0;
+  max-width: var(--tv-reading-width);
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--zen-muted);
+}
+
+.editorial-process {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--tv-section-space-compact);
+}
+
+@media (min-width: 768px) {
+  .editorial-process {
+    padding-left: 4rem;
+  }
+}
+
+.editorial-process__stage {
+  position: relative;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .editorial-process__stage {
+    margin-inline: 0;
+  }
+  .editorial-process__stage:nth-child(even) {
+    margin-left: auto;
+    margin-right: 4rem;
+  }
+  .editorial-process__stage:nth-child(odd) {
+    margin-right: auto;
+  }
+}
+
+.editorial-process__numeral {
+  position: absolute;
+  top: -1rem;
+  left: -4.5rem;
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--zen-border);
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .editorial-process__numeral {
+    position: static;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.editorial-process__name {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.25rem, calc(1.1rem + 0.6vw), 1.5rem); /* 20 / 22 / 24 */
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--zen-deep);
+  margin-bottom: 1rem;
+}
+
+/* ═══ D. DIAGNOSTIC QUESTION SEQUENCE ═══
+   Same compact rhythm as the editorial ladder; Home body metrics inside
+   each question so wrapped lines keep normal reading leading. */
+.editorial-process__questions {
+  margin: 1.5rem 0 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid color-mix(in srgb, var(--zen-moss) 55%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+  color: var(--zen-deep);
+}
+
+@media (max-width: 767px) {
+  .editorial-process__questions {
+    gap: 0.375rem;
+  }
+}
+
+.editorial-process__detail {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.125rem, calc(1rem + 0.5vw), 1.25rem); /* 18 / 19 / 20 */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--zen-deep);
+  margin-top: 0.75rem;
+}
+
+.editorial-price {
+  margin: 2rem auto;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, calc(1.3rem + 0.8vw), 2rem); /* 24 / 28 / 32 */
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--zen-deep);
+}
+
+.editorial-benefits {
+  margin: 0 auto;
+  max-width: var(--tv-reading-width);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.editorial-benefits li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: var(--tv-type-body-size);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--zen-muted);
+}
+
+/* Marker is real markup (an em dash character), never a CSS escape sequence,
+   so it can neither be mis-encoded nor overlap the benefit text. */
+.editorial-benefits__marker {
+  flex: 0 0 auto;
+  color: var(--zen-moss);
+  user-select: none;
+}
+
+/* ═══ FINALE ═══ Brand label + statement, scaled inside the Home system.
+   This is a closing section, not a second hero. */
+.editorial-finale__brand {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.5rem, calc(1.35rem + 0.6vw), 1.875rem); /* 24 / 27 / 30 */
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: var(--zen-deep);
+}
+
+.editorial-finale__lines {
+  margin: 1.75rem auto;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.editorial-finale__line {
+  font-family: var(--font-editorial-serif);
+  font-size: clamp(1.375rem, calc(1.2rem + 0.7vw), 1.75rem); /* 22 / 25 / 28 */
+  line-height: 1.35;
+  font-weight: 400;
+  color: var(--zen-deep);
+}
+
+.editorial-finale__price {
+  margin-top: 1.75rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+  color: var(--zen-deep);
+}
+
+.editorial-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--zen-deep);
+  border-bottom: 1px solid var(--zen-moss);
+  transition: color var(--zen-transition-normal), border-color var(--zen-transition-normal);
+}
+
+.editorial-cta:hover {
+  color: var(--zen-moss);
+  border-bottom-color: var(--zen-moss);
+}
+
+.editorial-cta:focus-visible {
+  outline: 2px solid var(--zen-moss);
+  outline-offset: 4px;
 }

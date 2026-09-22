@@ -1,32 +1,28 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
-import translationES from './locales/es/translation.json';
 import translationEN from './locales/en/translation.json';
 
 const resources = {
-  es: {
-    translation: translationES
-  },
   en: {
     translation: translationEN
   }
 };
 
+// English-only website (Canadian market).
+// No language detector is registered, so nothing reads or writes `i18nextLng`.
+// The runtime language is pinned explicitly: a stale `i18nextLng=es` value left
+// in a returning visitor's localStorage therefore has no effect.
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'es',
+    lng: 'en',
+    fallbackLng: 'en',
+    supportedLngs: ['en'],
     debug: false,
     interpolation: {
       escapeValue: false
-    },
-    detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
     }
   });
 

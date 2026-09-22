@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
-import LanguageSwitcher from './LanguageSwitcher';
 import ensoPrimary from '../assets/images/shared/enso-primary.webp';
 
 const Header = () => {
@@ -68,11 +67,8 @@ const Header = () => {
             </Button>
           </nav>
 
-          {/* Language Switcher & Mobile Menu */}
-          <div className="flex items-center gap-4">
-            {/* Language Switcher - Always visible */}
-            <LanguageSwitcher />
-
+          {/* Mobile Menu */}
+          <div className="flex items-center">
             {/* Mobile menu button */}
             <div className="lg:hidden">
               <button

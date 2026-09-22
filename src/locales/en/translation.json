@@ -186,49 +186,177 @@
   },
   "theVoid": {
     "hero": {
-      "eyebrow": "Inner Space",
-      "title": "The Void",
-      "lead": "A Space to Listen Within",
-      "intro": "The Void is the space that appears when we stop filling every silence, holding every certainty, and repeating every story.",
-      "cta": "Enter the silence",
+      "title": "PATTERN MODIFICATION",
+      "lead": "A deep exploration of what you learned to repeat",
       "scroll": "Scroll to begin"
     },
     "intro": {
-      "title": "The space between stories",
-      "paragraph1": "Much of our life is built around narratives: who we are, what we should do, what we expect from others, and what we believe may happen.",
-      "paragraph2": "When those stories pause for a moment, a space appears that doesn't need to be immediately explained.",
-      "paragraph3": "That space is The Void."
+      "paragraph1": "There are ways of thinking, feeling, and acting that seem to belong to our personality, but that are often learned responses.",
+      "ladderLead": "Patterns that were built throughout our history and that, in the face of certain circumstances, reappear:",
+      "ladderLine1": "in our relationships,",
+      "ladderLine2": "in our decisions,",
+      "ladderLine3": "in our conflicts,",
+      "ladderLine4": "in what we avoid,",
+      "ladderLine5": "and also in the ways we sabotage ourselves without realizing it.",
+      "paragraph2": "This program proposes observing those patterns from their origin and discovering what keeps them running.",
+      "paragraph3": "It is not about receiving advice on what to do.",
+      "paragraph4": "It is about discovering for ourselves what needs to be seen, understood, and modified."
     },
-    "principles": {
-      "title": "What appears when we stop filling the silence",
-      "pause": {
-        "title": "Pause",
-        "text": "A moment to stop reacting automatically."
+    "work": {
+      "title": "THE WORK IS YOURS",
+      "paragraph1": "The process begins with your own history.",
+      "paragraph2": "Through written communication, we will explore experiences, events, decisions, relationships, emotions, and recurring situations to identify the patterns behind certain attitudes, behaviors, and ways of relating to reality.",
+      "paragraph3": "The facilitator does not interpret your life for you, nor tells you who you are.",
+      "paragraph4": "Their role is to ask the necessary questions.",
+      "questionsLead": "Precise questions.",
+      "questionsLine1": "Uncomfortable questions when necessary.",
+      "questionsLine2": "Questions that allow going beyond the usual explanation.",
+      "questionsLine3": "Surgical questions to find the exact point where something can be modified.",
+      "closing": "Discovery and transformation belong entirely to the client."
+    },
+    "technology": {
+      "title": "A TECHNOLOGY OF CONSCIOUSNESS",
+      "paragraph1": "The program uses a system of exploration that contemplates each stage of the process of modifying or rewriting reality and inner experience.",
+      "paragraph2": "We start from a simple idea:",
+      "paragraph3": "The way we experience our reality is not separate from our history, our interpretations, our emotions, our bodily responses, and our habitual ways of acting.",
+      "paragraph4": "By making the structure of a pattern conscious, we can begin to relate to it in a different way.",
+      "paragraph5": "Within this system, inner experience is contemplated as a technology of consciousness: a map that relates different levels of manifestation to specific zones and functions of the human and subtle anatomy."
+    },
+    "map": {
+      "title": "MANIFESTATION MAP",
+      "medios": {
+        "name": "Means",
+        "zone": "wrists and ankles",
+        "description": "The way we relate to the means available to move, act, and accomplish."
       },
-      "observation": {
-        "title": "Observation",
-        "text": "The possibility of looking at thoughts, emotions, and patterns without immediately turning them into an identity."
+      "carisma": {
+        "name": "Charisma",
+        "zone": "elbows and knees",
+        "description": "The capacity to relate, influence, and express our presence in the encounter with others."
       },
-      "disidentification": {
-        "title": "Disidentification",
-        "text": "Recognizing that a story can be present without completely defining who you are."
+      "capacidad": {
+        "name": "Capacity",
+        "zone": "upper arms and legs",
+        "description": "The inner resources to hold, execute, and carry something toward experience."
       },
-      "presence": {
-        "title": "Presence",
-        "text": "Returning to what is happening now, before interpreting it."
+      "orientacion": {
+        "name": "Orientation",
+        "zone": "pelvis",
+        "description": "The direction from which we position ourselves and move in life."
+      },
+      "eliminacion": {
+        "name": "Elimination",
+        "zone": "lower intestine",
+        "description": "The capacity to release, complete cycles, and let go of what we no longer need."
+      },
+      "asimilacion": {
+        "name": "Assimilation",
+        "zone": "upper intestine",
+        "description": "The way we receive, process, and integrate our experiences."
+      },
+      "impulso": {
+        "name": "Impulse",
+        "zone": "chest",
+        "description": "The force that moves us toward action, desire, and expression."
+      },
+      "necesidades": {
+        "name": "Needs",
+        "zone": "mouth",
+        "description": "The capacity to recognize, express, and receive what we need."
+      },
+      "posibilidades": {
+        "name": "Possibilities",
+        "zone": "nose",
+        "description": "The perception of the possible and our relationship with what does not yet exist in our experience."
+      },
+      "forma": {
+        "name": "Form",
+        "zone": "eyes",
+        "description": "The way we perceive, focus, and give shape to our reality."
+      },
+      "sustancia": {
+        "name": "Substance",
+        "zone": "ears",
+        "description": "What we receive, listen to, and allow to become part of our experience."
+      },
+      "disclaimer": "This map does not intend to replace a medical or anatomical explanation. It is part of the conceptual and contemplative language used within the process."
+    },
+    "process": {
+      "title": "HOW DOES IT WORK?",
+      "stages": {
+        "historia": {
+          "name": "YOUR HISTORY",
+          "paragraph1": "We begin with what you have lived.",
+          "paragraph2": "Significant experiences, relationships, conflicts, decisions, repetitions, and situations that keep producing certain responses."
+        },
+        "patron": {
+          "name": "THE PATTERN",
+          "paragraph1": "We look for what repeats itself.",
+          "question1": "What happens?",
+          "question2": "What triggers it?",
+          "question3": "What do you do afterward?",
+          "question4": "What do you try to avoid?",
+          "question5": "What do you gain?",
+          "question6": "What do you lose?",
+          "detailLead": "And above all:",
+          "detail": "what structure is sustaining that behavior?"
+        },
+        "pregunta": {
+          "name": "THE QUESTION",
+          "paragraph1": "The facilitator intervenes mainly through questions.",
+          "paragraph2": "Not to give you an answer, but to help you reach the place where the answer can be discovered by you."
+        },
+        "modificacion": {
+          "name": "THE MODIFICATION",
+          "paragraph1": "Once the pattern is recognized, the process of modification or rewriting begins.",
+          "paragraph2": "Understanding something intellectually is not enough.",
+          "paragraph3": "Modification involves observing how that structure appears in your experience and beginning to generate a different relationship with it."
+        },
+        "integracion": {
+          "name": "THE INTEGRATION",
+          "paragraph1": "The final goal is not to accumulate answers.",
+          "paragraph2": "It is to develop a greater capacity to recognize your own patterns while they are happening and to consciously participate in the way you respond."
+        }
       }
     },
-    "notAbsence": {
-      "title": "The void is not absence",
-      "paragraph1": "It's not about eliminating thoughts, denying emotions, or escaping one's personal history.",
-      "paragraph2": "It's about creating enough inner space for a different response to emerge.",
-      "paragraph3": "In that interval between the known and what still has no name, a different way of relating to ourselves can begin."
+    "membership": {
+      "title": "A SUBSCRIPTION, NOT A FIXED-TIME PROGRAM",
+      "paragraph1": "Pattern modification does not necessarily have an eight-week calendar.",
+      "paragraph2": "Each person arrives with a different history and finds different points of work.",
+      "paragraph3": "That is why the proposal works as a monthly membership.",
+      "price": "$1,700 MXN / MONTH",
+      "includesLabel": "Includes:",
+      "benefit1": "Personalized accompaniment.",
+      "benefit2": "Unlimited communication via email.",
+      "benefit3": "Exploration of your personal history.",
+      "benefit4": "Identification of recurring patterns.",
+      "benefit5": "Questions and observation exercises.",
+      "benefit6": "Accompaniment during the modification process.",
+      "benefit7": "Continuous follow-up while the membership remains active.",
+      "paragraph4": "You do not need to write every day.",
+      "paragraph5": "You can write when something happens, when a question arises, when you recognize a pattern, or when you need to explore something that is happening in your experience.",
+      "paragraph6": "The process moves at the pace of what you are living."
     },
-    "closing": {
-      "title": "Stay a moment",
-      "paragraph1": "Not every space needs to be filled.",
-      "paragraph2": "Sometimes it's enough to remain, breathe, and listen to what arises when we stop searching for an immediate answer.",
-      "cta": "Explore meditation"
+    "statement": {
+      "title": "I DO NOT COME TO TELL YOU WHAT TO DO",
+      "paragraph1": "This work starts from a fundamental premise:",
+      "premise": "No one can modify your reality for you.",
+      "ladderLead": "I can help you look.",
+      "ladderLine1": "I can ask a question.",
+      "ladderLine2": "I can point out a contradiction.",
+      "ladderLine3": "I can take you to a place you may not have observed.",
+      "ladderLine4": "But the discovery, the decision, and the modification are yours.",
+      "paragraph2": "Because the purpose is not for you to depend on someone who interprets your life.",
+      "paragraph3": "It is for you to learn to observe it with enough clarity to begin to participate consciously in it."
+    },
+    "finale": {
+      "brand": "THE VOID",
+      "line1": "Observe the pattern.",
+      "line2": "Find the structure.",
+      "line3": "Ask the question.",
+      "line4": "Modify what you no longer want to repeat.",
+      "price": "$1,700 MXN / month",
+      "cta": "I want to begin the process"
     }
   },
   "home": {
